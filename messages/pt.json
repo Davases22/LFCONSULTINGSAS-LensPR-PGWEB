@@ -3,6 +3,7 @@
     "home": "Inicio",
     "agency": "Agência",
     "clients": "Clientes",
+    "successCases": "Casos de Sucesso",
     "results": "Resultados",
     "awards": "Prêmios",
     "language": "PT",
@@ -243,5 +244,9 @@
       "Button": "Ir para o evento",
       "Cost": "Custo"
     }
+  },
+  "successCases": {
+    "title": "Casos de Sucesso",
+    "subtitle": "Descubra alguns dos nossos projetos mais destacados e os resultados que alcançamos para nossos clientes."
   }
 }
