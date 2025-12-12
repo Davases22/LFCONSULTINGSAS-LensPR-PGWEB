@@ -14,7 +14,7 @@ export default function LoudSection() {
       <p className="text-lg text-gray-600">{t("subtitle")}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 xl:gap-24 w-full px-4 md:px-8 lg:px-12 xl:px-20">
-        <div className="bg-black rounded-xl text-white p-6 md:p-6 lg:p-8 flex flex-col items-start text-left aspect-[2/1] max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full">
+        <div className="bg-black rounded-xl text-white p-6 md:p-6 lg:p-8 flex flex-col items-start text-left aspect-[2/1.4] max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full">
           <div className="h-full flex flex-col space-y-3 md:space-y-4 lg:space-y-5">
             <div className="pt-2">
               <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-4xl leading-tight">
@@ -29,7 +29,7 @@ export default function LoudSection() {
           </div>
         </div>
 
-        <div className="bg-orange-400 rounded-xl flex flex-col items-start text-left relative overflow-hidden aspect-[2/1] max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full">
+        <div className="bg-orange-400 rounded-xl flex flex-col items-start text-left relative overflow-hidden aspect-[2/1.4] max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full">
           <div className="relative z-10 p-6 md:p-6 lg:p-8 h-full flex flex-col space-y-3 md:space-y-4 lg:space-y-5">
             <div className="pt-2">
               <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-4xl leading-tight text-black">
@@ -44,7 +44,7 @@ export default function LoudSection() {
           </div>
         </div>
 
-        <div className="bg-gray-100 rounded-xl p-6 md:p-6 lg:p-8 flex flex-col items-start text-left aspect-[2/1] max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full md:col-span-2 lg:col-span-1">
+        <div className="bg-gray-100 rounded-xl p-6 md:p-6 lg:p-8 flex flex-col items-start text-left aspect-[2/1.4] max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full md:col-span-2 lg:col-span-1">
           <div className="h-full flex flex-col space-y-3 md:space-y-4 lg:space-y-5">
             <div className="pt-2">
               <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-4xl leading-tight text-gray-900">

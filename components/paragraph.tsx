@@ -12,7 +12,7 @@ export default function Paragraph() {
   return (
     <section className="flex flex-col items-center justify-center text-center px-4 sm:px-8 py-8 md:py-16 bg-white dark:bg-zinc-900 transition-colors duration-300">
       <div className="max-w-full">
-        <p className="text-lg md:text-2xl md:py-8 md:tracking-wider font-thin text-justify text-black">
+        <p className="text-lg md:text-2xl md:py-8 md:tracking-wider font-normal text-justify text-black dark:text-white">
           {t("text")}
         </p>
 
