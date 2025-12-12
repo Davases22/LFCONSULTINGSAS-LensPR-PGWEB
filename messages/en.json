@@ -3,7 +3,6 @@
     "home": "Home",
     "agency": "Agency",
     "clients": "Clients",
-    "successCases": "Success Cases",
     "results": "Results",
     "awards": "Awards",
     "language": "EN",
@@ -245,10 +244,6 @@
       "Button": "Go to event",
       "Cost": "Ticket"
     }
-  },
-  "successCases": {
-    "title": "Success Cases",
-    "subtitle": "Discover some of our most outstanding projects and the results we have achieved for our clients."
   },
   "clientCategories": {
     "hrtech": "HRTech",

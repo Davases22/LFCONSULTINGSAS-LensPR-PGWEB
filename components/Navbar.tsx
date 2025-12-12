@@ -107,16 +107,6 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           </Link>
         </li>
 
-        {/* CASOS DE ÉXITO */}
-        <li>
-          <Link
-            href={`/${currentLanguage}/sections/success-cases`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-          >
-            {t("successCases")}
-          </Link>
-        </li>
-
         {/* PRENSA */}
         <li>
           <Link
@@ -275,16 +265,6 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("clients")}
-              </Link>
-            </li>
-            {/* Casos de Éxito */}
-            <li>
-              <Link
-                href={`/${currentLanguage}/sections/success-cases`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t("successCases")}
               </Link>
             </li>
             {/* Prensa */}
