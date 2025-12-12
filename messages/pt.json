@@ -3,6 +3,7 @@
     "home": "Inicio",
     "agency": "Agência",
     "clients": "Clientes",
+    "successCases": "Casos de Sucesso",
     "results": "Resultados",
     "awards": "Prêmios",
     "language": "PT",
@@ -243,5 +244,31 @@
       "Button": "Ir para o evento",
       "Cost": "Custo"
     }
+  },
+  "successCases": {
+    "title": "Casos de Sucesso",
+    "subtitle": "Descubra alguns dos nossos projetos mais destacados e os resultados que alcançamos para nossos clientes."
+  },
+  "clientCategories": {
+    "hrtech": "HRTech",
+    "financeWealth": "Finance & Wealth Management",
+    "ventureCapital": "Fundos de Investimento / VC",
+    "fintech": "Fintech (pagamentos, crédito, investimento, payroll)",
+    "web3Crypto": "Web3 / Cripto / Blockchain",
+    "saas": "SaaS",
+    "proptechContech": "PropTech & ConTech",
+    "accelerators": "Aceleradoras / Hubs",
+    "marketplaces": "Marketplaces",
+    "agriFoodtech": "Agri & FoodTech",
+    "healthtechPettech": "HealthTech & PetTech",
+    "edtech": "EdTech & Formação",
+    "legaltech": "LegalTech",
+    "aiAutomation": "Inteligência Artificial (IA) e Automação",
+    "businessIntelligence": "Business Intelligence (BI) & Public Affairs Intelligence",
+    "telecomIt": "Telecom / IT Services & Cibersecurity",
+    "ux": "UX",
+    "institutions": "Instituições, Ecossistema e Governo",
+    "personalBrand": "Personal Brand",
+    "agencies": "Agências"
   }
 }

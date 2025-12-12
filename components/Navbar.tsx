@@ -50,9 +50,9 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 flex items-center justify-around bg-white dark:bg-zinc-900 text-lg z-50 dark:text-white shadow-sm border-b border-gray-100 dark:border-zinc-800 transition-all duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 right-0 flex items-center justify-around bg-white dark:bg-zinc-900 text-lg z-50 dark:text-white transition-all duration-300 ease-in-out ${
         isScrolled
-          ? "py-3 md:py-4 backdrop-blur-md bg-white/95 dark:bg-zinc-900/95"
+          ? "py-3 md:py-4 backdrop-blur-md bg-white/95 dark:bg-zinc-900/95 shadow-sm border-b border-gray-100 dark:border-zinc-800"
           : "py-6 md:py-8"
       }`}
     >
@@ -104,6 +104,16 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
             className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("clients")}
+          </Link>
+        </li>
+
+        {/* CASOS DE ÉXITO */}
+        <li>
+          <Link
+            href={`/${currentLanguage}/sections/success-cases`}
+            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+          >
+            {t("successCases")}
           </Link>
         </li>
 
@@ -265,6 +275,16 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("clients")}
+              </Link>
+            </li>
+            {/* Casos de Éxito */}
+            <li>
+              <Link
+                href={`/${currentLanguage}/sections/success-cases`}
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("successCases")}
               </Link>
             </li>
             {/* Prensa */}

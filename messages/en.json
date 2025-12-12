@@ -3,6 +3,7 @@
     "home": "Home",
     "agency": "Agency",
     "clients": "Clients",
+    "successCases": "Success Cases",
     "results": "Results",
     "awards": "Awards",
     "language": "EN",
@@ -244,5 +245,31 @@
       "Button": "Go to event",
       "Cost": "Ticket"
     }
+  },
+  "successCases": {
+    "title": "Success Cases",
+    "subtitle": "Discover some of our most outstanding projects and the results we have achieved for our clients."
+  },
+  "clientCategories": {
+    "hrtech": "HRTech",
+    "financeWealth": "Finance & Wealth Management",
+    "ventureCapital": "Investment Funds / VC",
+    "fintech": "Fintech (payments, credit, investment, payroll)",
+    "web3Crypto": "Web3 / Crypto / Blockchain",
+    "saas": "SaaS",
+    "proptechContech": "PropTech & ConTech",
+    "accelerators": "Accelerators / Hubs",
+    "marketplaces": "Marketplaces",
+    "agriFoodtech": "Agri & FoodTech",
+    "healthtechPettech": "HealthTech & PetTech",
+    "edtech": "EdTech & Training",
+    "legaltech": "LegalTech",
+    "aiAutomation": "Artificial Intelligence (AI) and Automation",
+    "businessIntelligence": "Business Intelligence (BI) & Public Affairs Intelligence",
+    "telecomIt": "Telecom / IT Services & Cybersecurity",
+    "ux": "UX",
+    "institutions": "Institutions, Ecosystem and Government",
+    "personalBrand": "Personal Brand",
+    "agencies": "Agencies"
   }
 }
