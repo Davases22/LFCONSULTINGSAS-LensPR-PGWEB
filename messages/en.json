@@ -139,7 +139,11 @@
     "events": "Events",
     "eventsDescription": "Our experiences leveled up brands and their key audiences across LATAM.",
     "publications": "Publications",
-    "publicationsDescription": "We tell stories. Our clients have the content, we publish it."
+    "publicationsDescription": "We tell stories. Our clients have the content, we publish it.",
+    "brandsCta": "See Brands & Clients",
+    "countriesCta": "See Countries",
+    "eventsCta": "See Events",
+    "publicationsCta": "See Press"
   },
   "travelHospitality": {
     "headerTitle": "Achivements & Industries",
@@ -349,7 +353,8 @@
     "ux": "UX",
     "institutions": "Institutions, Ecosystem and Government",
     "personalBrand": "Personal Brand",
-    "agencies": "Agencies"
+    "agencies": "Agencies",
+    "saludRestaurantes": "Health & Restaurants"
   },
   "countriesPage": {
     "title": "Countries & Cities",

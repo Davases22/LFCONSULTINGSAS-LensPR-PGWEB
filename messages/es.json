@@ -139,7 +139,11 @@
     "events": "Eventos",
     "eventsDescription": "Hemos creado más de 500 experiencias que unen marcas con las audiencias que importan en toda LATAM.",
     "publications": "Publicaciones",
-    "publicationsDescription": "Somos narradores del ecosistema: logramos que las historias de nuestros clientes aparezcan más de 1000 veces en medios clave."
+    "publicationsDescription": "Somos narradores del ecosistema: logramos que las historias de nuestros clientes aparezcan más de 1000 veces en medios clave.",
+    "brandsCta": "Ver Marcas y Clientes",
+    "countriesCta": "Ver Países",
+    "eventsCta": "Ver Eventos",
+    "publicationsCta": "Ver Prensa"
   },
   "travelHospitality": {
     "headerTitle": "Logros e Industrias",
@@ -348,7 +352,8 @@
     "ux": "UX",
     "institutions": "Instituciones, Ecosistema y Gobierno",
     "personalBrand": "Personal Brand",
-    "agencies": "Agencias"
+    "agencies": "Agencias",
+    "saludRestaurantes": "Salud y Restaurantes"
   },
   "countriesPage": {
     "title": "Países & Ciudades",
