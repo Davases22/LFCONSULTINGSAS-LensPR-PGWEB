@@ -28,13 +28,86 @@
       "paragraph1": "A LENS PR é uma agência boutique de relações públicas especializada no setor de tecnologia, com operações em mais de 10 países na América Latina, nos EUA e na Espanha. Conectamos fundadores, startups e fundos de VC com seus públicos ou clientes por meio de estratégias tailor-made de imprensa, comunicação, eventos de alto nível e alianças estratégicas.",
       "paragraph2": "Com mais de 400 publicações para nossos clientes e mais de 50 eventos personalizados, nos consolidamos como atores relevantes no ecossistema de tecnologia na Colômbia e na América Latina.",
       "paragraph3": "Empresas globais como DEEL, Blackrock, startups promissoras da Forbes como Yuno e Celes, e VCs de destaque como FEMSA Ventures, Newtopia VC, Latitud, além do evento mais importante do ecossistema local, o Colombia Tech Week, confiaram em nós."
-    }
+    },
+    "scheduleCta": "Agendar reunião ou conferência",
+    "speakerCta": "Me convide como palestrante"
   },
   "services": {
-    "clientsIndustries": "Clientes e Indústrias",
-    "pressVisibility": "Imprensa e Visibilidade",
-    "description": "Com mais de 400 publicações para nossos clientes e mais de 50 eventos personalizados, consolidamo-nos como players essenciais no ecossistema tech na Colômbia e na LATAM. Empresas globais como DEEL, Blackrock, startups promissoras da Forbes como Yuno e Celes, VCs de destaque como FEMSA Ventures, Newtopia VC, Latitud, e o Colombia Tech Week, o evento local mais importante, confiaram em nós.",
-    "seeAllClients": "VER TODOS OS CLIENTES",
+    "filtersAriaLabel": "Filtros de serviços",
+    "filters": {
+      "freePress": "Free Press",
+      "mediaAdvertising": "Mídia paga em veículos",
+      "experienceDesign": "Design de experiências e direção de arte",
+      "eventProduction": "Produção de eventos e BTL",
+      "mediaOutreach": "Convocatória de mídia",
+      "corporateMerch": "Merch e SWAGS corporativo",
+      "venueScouting": "Venue scouting",
+      "influencerMarketing": "Influencer Marketing",
+      "photoVideoCoverage": "Cobertura fotográfica e audiovisual",
+      "podcastLivestream": "Produção de podcasts e live streaming"
+    },
+    "details": {
+      "freePress": {
+        "kicker": "MÍDIA ESPONTÂNEA · PR TECH · LATAM",
+        "title": "Imprensa e Visibilidade",
+        "description": "Com mais de 400 publicações para nossos clientes e mais de 50 eventos sob medida, nos consolidamos como players-chave no ecossistema tech na Colômbia e LATAM. Empresas globais como DEEL e Blackrock, startups promissoras da Forbes como Yuno e Celes, VCs de destaque como FEMSA Ventures, Newtopia VC, Latitud e a Colombia Tech Week —o evento local mais importante— confiaram em nós.",
+        "ctaText": "VER TODOS OS CLIENTES"
+      },
+      "mediaAdvertising": {
+        "kicker": "MÍDIA PAGA · PROGRAMÁTICA · ADS DIGITAIS",
+        "title": "Mídia Paga Estratégica",
+        "description": "Desenhamos e executamos campanhas de mídia paga em canais digitais, impressos, OOH e broadcast que alcançam seus compradores onde as decisões são tomadas. De display programático e paid social no LinkedIn e Meta a inserções de alto impacto na imprensa de negócios e lifestyle, cada real investido é medido em resultados: pipeline, recall de marca e conversão.",
+        "ctaText": "SOLICITAR UM PLANO DE MÍDIA"
+      },
+      "experienceDesign": {
+        "kicker": "EXPERIÊNCIA DE MARCA · DIREÇÃO CRIATIVA · IDENTIDADE VISUAL",
+        "title": "Design de Experiências e Direção de Arte",
+        "description": "Construímos sistemas visuais e experiências de marca que transformam sua história em algo memorável. Nosso time desenvolve direção criativa, identidade e narrativa para lançamentos, campanhas e eventos imersivos, garantindo que cada ponto de contato seja intencional e on-brand —do palco principal aos ativos digitais.",
+        "ctaText": "VER NOSSO TRABALHO"
+      },
+      "eventProduction": {
+        "kicker": "MARKETING EXPERIENCIAL · BTL · EVENTOS TECH",
+        "title": "Produção de Eventos e BTL",
+        "description": "De jantares privados com investidores e lançamentos de produto a conferências de grande formato e ativações BTL, cuidamos da produção de ponta a ponta: conceito, logística, fornecedores, execução on-site e analytics pós-evento. Já entregamos mais de 500 experiências na LATAM, Estados Unidos e Europa para startups, VCs e marcas globais.",
+        "ctaText": "VER EVENTOS"
+      },
+      "mediaOutreach": {
+        "kicker": "RELAÇÕES COM IMPRENSA · PITCHING · VEÍCULOS-CHAVE",
+        "title": "Relacionamento com Imprensa",
+        "description": "Abrimos as portas que importam. Curamos listas de mídia segmentadas e fazemos pitching direto a jornalistas dos principais veículos de negócios, tecnologia e nicho em mais de 12 países. Com relações sólidas na Forbes, Bloomberg Línea, Contxto, El Tiempo, La Nación e outros, garantimos a cobertura que gera confiança com investidores, clientes e ecossistema.",
+        "ctaText": "VER RESULTADOS NA IMPRENSA"
+      },
+      "corporateMerch": {
+        "kicker": "MERCHANDISING · CORPORATE GIFTING · SWAG",
+        "title": "Merch e SWAG Corporativo",
+        "description": "Merch que seu time e seus clientes realmente querem guardar. Desenhamos, produzimos e entregamos apparel, acessórios tech, kits sustentáveis e caixas de onboarding para startups e marcas globais. De um drop de 50 peças para um lançamento até programas de swag para colaboradores em vários países, cuidamos da produção e logística na LATAM e nos EUA.",
+        "ctaText": "COTAR MEU MERCH"
+      },
+      "venueScouting": {
+        "kicker": "BUSCA DE LOCAÇÕES · LOCATIONS · ESPAÇOS DE EVENTO",
+        "title": "Venue Scouting",
+        "description": "Conhecemos os rooftops, clubes privados, galerias, vinícolas e centros de convenções que elevam uma marca. Fazemos scouting, negociamos e contratamos os venues que se encaixam na sua audiência, formato e orçamento, em mais de 10 cidades da América Latina, Estados Unidos e Europa. Você pensa a experiência; nós cuidamos do resto.",
+        "ctaText": "CONTE SOBRE SEU EVENTO"
+      },
+      "influencerMarketing": {
+        "kicker": "CREATORS · INFLUENCIADORES B2B · LATAM",
+        "title": "Influencer Marketing",
+        "description": "Identificamos, briefamos e executamos campanhas com creators e vozes de autoridade que já falam com a sua audiência: founders, VCs, vozes fintech, hosts de lifestyle e reviewers de tecnologia. De ativações com um creator a programas multimercado, gerimos briefs, contratos, aprovação de conteúdo e reports baseados em performance.",
+        "ctaText": "MONTAR UMA CAMPANHA"
+      },
+      "photoVideoCoverage": {
+        "kicker": "FOTOGRAFIA DE EVENTOS · VÍDEO CORPORATIVO · CAPTAÇÃO",
+        "title": "Cobertura Fotográfica e Audiovisual",
+        "description": "Transformamos cada evento em uma máquina de conteúdo. Nossos times entregam cobertura profissional de foto e vídeo —recap reels, entrevistas com founders, cortes para redes e material pronto para broadcast— em horas, não dias. Pensado para press kits, recap pós-evento, distribuição paga e a próxima apresentação do seu time comercial.",
+        "ctaText": "VER NOSSOS REELS"
+      },
+      "podcastLivestream": {
+        "kicker": "PRODUÇÃO DE PODCASTS · LIVE STREAMING · BROADCAST",
+        "title": "Produção de Podcasts e Live Streaming",
+        "description": "Produzimos podcasts de marca e transmissões ao vivo que transformam seus founders e clientes nas vozes que o ecossistema acompanha. Da estratégia do show e curadoria de convidados à gravação em estúdio, transmissão multicâmera no LinkedIn e YouTube, e show notes, transcrições e clipes otimizados para SEO que continuam rankeando muito depois do episódio no ar.",
+        "ctaText": "LANÇAR UM SHOW"
+      }
+    },
     "galleryItems": {
       "designContentTitle": "DESIGN DE CONTEÚDO GRÁFICO",
       "designContentDescription": "Criamos designs visuais envolventes que comunicam a essência da sua marca.",
@@ -153,12 +226,23 @@
     "phoneValue": "+57 301 6953041",
     "emailValue": "info@lenspr.com",
     "successMessage": "Mensagem enviada com sucesso! Entraremos em contato em breve.",
-    "errorMessage": "Houve um erro ao enviar a mensagem. Tente novamente."
+    "errorMessage": "Houve um erro ao enviar a mensagem. Tente novamente.",
+    "scheduleCallButton": "Agendar uma chamada"
   },
   "press": {
     "title": "Notícias",
     "noNews": "Nenhuma notícia disponível",
-    "seeMore": "Ver mais"
+    "seeMore": "Ver mais",
+    "filters": {
+      "client": "Cliente",
+      "country": "País",
+      "vertical": "Vertical",
+      "allClients": "Todos os clientes",
+      "allCountries": "Todos os países",
+      "allVerticals": "Todos os verticais",
+      "clear": "Limpar filtros",
+      "count": "{count, plural, =0 {Sem resultados} =1 {1 notícia} other {# notícias}}"
+    }
   },
   "clients": {
     "title": "Clientes",

@@ -28,13 +28,86 @@
       "paragraph1": "LENS PR is a boutique public relations agency specialized in the tech sector with operations in over 10 countries in LATAM, the US, and Spain. We connect founders, startups, and VC funds with their audiences or clients through tailor-made press, communication, high-level events, and strategic alliances.",
       "paragraph2": "With over 400 publications for our clients and more than 50 tailor-made events, we have established ourselves as key players in the tech ecosystem in Colombia and LATAM.",
       "paragraph3": "Global companies such as DEEL, Blackrock, Forbes-promising startups like Yuno and Celes, and notable VCs like FEMSA Ventures, Newtopia VC, Latitud, as well as the most important local ecosystem event, Colombia Tech Week, have trusted us."
-    }
+    },
+    "scheduleCta": "Schedule meeting or conference",
+    "speakerCta": "Book me as a speaker"
   },
   "services": {
-    "clientsIndustries": "Clients & Industries",
-    "pressVisibility": "Press & Visibility",
-    "description": "With over 400 publications for our clients and more than 50 tailor-made events, we have established ourselves as key players in the tech ecosystem in Colombia and LATAM. Global companies like DEEL, Blackrock, Forbes-promising startups such as Yuno and Celes, notable VCs like FEMSA Ventures, Newtopia VC, Latitud, and Colombia Tech Week, the most important local event, have trusted us.",
-    "seeAllClients": "SEE ALL CLIENTS",
+    "filtersAriaLabel": "Service filters",
+    "filters": {
+      "freePress": "Free Press",
+      "mediaAdvertising": "Media Advertising",
+      "experienceDesign": "Experience Design & Art Direction",
+      "eventProduction": "Event Production & BTL",
+      "mediaOutreach": "Media Outreach",
+      "corporateMerch": "Corporate Merch & SWAGS",
+      "venueScouting": "Venue Scouting",
+      "influencerMarketing": "Influencer Marketing",
+      "photoVideoCoverage": "Photo & Video Coverage",
+      "podcastLivestream": "Podcast & Live Streaming Production"
+    },
+    "details": {
+      "freePress": {
+        "kicker": "EARNED MEDIA · TECH PR · LATAM",
+        "title": "Press & Visibility",
+        "description": "With over 400 publications for our clients and more than 50 tailor-made events, we have established ourselves as key players in the tech ecosystem in Colombia and LATAM. Global companies like DEEL and Blackrock, Forbes-promising startups such as Yuno and Celes, notable VCs like FEMSA Ventures, Newtopia VC, Latitud, and Colombia Tech Week —the most important local event— have trusted us.",
+        "ctaText": "SEE ALL CLIENTS"
+      },
+      "mediaAdvertising": {
+        "kicker": "PAID MEDIA · PROGRAMMATIC · DIGITAL ADS",
+        "title": "Strategic Media Buying",
+        "description": "We design and run paid media campaigns across digital, print, OOH and broadcast outlets that reach your buyers where decisions are made. From programmatic display and paid social on LinkedIn and Meta to high-impact placements in business and lifestyle press, every dollar is tied to measurable results: pipeline, brand recall and conversion.",
+        "ctaText": "REQUEST A MEDIA PLAN"
+      },
+      "experienceDesign": {
+        "kicker": "BRAND EXPERIENCE · CREATIVE DIRECTION · VISUAL IDENTITY",
+        "title": "Experience Design & Art Direction",
+        "description": "We build visual systems and brand experiences that turn your story into something memorable. Our team develops creative direction, identity and narrative for launches, campaigns and immersive events, making sure every touchpoint feels intentional and on-brand, from keynote stages to digital assets.",
+        "ctaText": "SEE OUR WORK"
+      },
+      "eventProduction": {
+        "kicker": "EXPERIENTIAL MARKETING · BTL · TECH EVENTS",
+        "title": "Event Production & BTL",
+        "description": "From private investor dinners and product launches to large-format conferences and BTL activations, we handle production end-to-end: concept, logistics, vendors, on-site execution and post-event analytics. We've delivered 500+ experiences across LATAM, the U.S. and Europe for startups, VCs and global brands.",
+        "ctaText": "VIEW EVENTS"
+      },
+      "mediaOutreach": {
+        "kicker": "JOURNALIST RELATIONS · PRESS PITCHING · KEY OUTLETS",
+        "title": "Media Outreach & Press Relations",
+        "description": "We open the doors that matter. We curate targeted media lists and pitch journalists at top-tier business, tech and niche outlets across 12+ countries. With long-standing relationships at Forbes, Bloomberg Línea, Contxto, El Tiempo, La Nación and more, we secure the coverage that builds trust with investors, clients and ecosystem.",
+        "ctaText": "SEE MEDIA RESULTS"
+      },
+      "corporateMerch": {
+        "kicker": "BRANDED MERCHANDISE · CORPORATE GIFTING · SWAG",
+        "title": "Corporate Merch & Swag",
+        "description": "Custom merch your team and clients actually want to keep. We design, source and ship branded apparel, tech accessories, sustainable kits and onboarding boxes for startups and global brands. From a 50-piece launch drop to multi-country employee swag programs, we manage production and logistics across LATAM and the U.S.",
+        "ctaText": "REQUEST A QUOTE"
+      },
+      "venueScouting": {
+        "kicker": "VENUE SOURCING · LOCATION SCOUTING · EVENT SPACES",
+        "title": "Venue Scouting",
+        "description": "We know the rooftops, members clubs, galleries, vineyards and conference centers that elevate a brand. We scout, negotiate and contract venues that fit your audience, format and budget across 10+ cities in Latin America, the U.S. and Europe, so you can focus on the experience.",
+        "ctaText": "TELL US ABOUT YOUR EVENT"
+      },
+      "influencerMarketing": {
+        "kicker": "CREATOR PARTNERSHIPS · B2B INFLUENCERS · LATAM",
+        "title": "Influencer Marketing",
+        "description": "We identify, brief and run campaigns with creators and thought leaders who already speak to your audience: founders, VCs, fintech voices, lifestyle hosts and tech reviewers. From single-creator activations to multi-market programs, we manage briefs, contracts, content approval and performance reporting.",
+        "ctaText": "BUILD A CAMPAIGN"
+      },
+      "photoVideoCoverage": {
+        "kicker": "EVENT PHOTOGRAPHY · CORPORATE VIDEO · CONTENT CAPTURE",
+        "title": "Photo & Video Coverage",
+        "description": "We turn every event into a content engine. Our crews deliver professional photo and video coverage —recap reels, founder interviews, social cutdowns and broadcast-ready footage— within hours, not days. Built for press kits, post-event recaps, paid distribution and your sales team's next pitch.",
+        "ctaText": "SEE OUR REELS"
+      },
+      "podcastLivestream": {
+        "kicker": "PODCAST PRODUCTION · LIVE STREAMING · BROADCAST",
+        "title": "Podcast & Live Streaming Production",
+        "description": "We produce branded podcasts and live broadcasts that turn your founders and clients into the voices the ecosystem follows. From show strategy and guest sourcing to studio recording, multi-camera live streaming on LinkedIn and YouTube, and SEO-optimized show notes, transcripts and clips that keep ranking long after the episode airs.",
+        "ctaText": "LAUNCH A SHOW"
+      }
+    },
     "galleryItems": {
       "designContentTitle": "GRAPHIC CONTENT DESIGN",
       "designContentDescription": "Crafting visually compelling designs that resonate with your audience.",
@@ -153,12 +226,23 @@
     "phoneValue": "+57 301 6953041",
     "emailValue": "info@lenspr.com",
     "successMessage": "Message sent successfully! We'll contact you soon.",
-    "errorMessage": "There was an error sending the message. Please try again."
+    "errorMessage": "There was an error sending the message. Please try again.",
+    "scheduleCallButton": "Schedule a call"
   },
   "press": {
     "title": "News",
     "noNews": "No news available",
-    "seeMore": "See more"
+    "seeMore": "See more",
+    "filters": {
+      "client": "Client",
+      "country": "Country",
+      "vertical": "Vertical",
+      "allClients": "All clients",
+      "allCountries": "All countries",
+      "allVerticals": "All verticals",
+      "clear": "Clear filters",
+      "count": "{count, plural, =0 {No results} =1 {1 story} other {# stories}}"
+    }
   },
   "clients": {
     "title": "Clients",
