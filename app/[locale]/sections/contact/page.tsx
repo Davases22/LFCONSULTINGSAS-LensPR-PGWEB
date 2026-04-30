@@ -8,7 +8,7 @@ import { MapPin, PhoneCall, Mail, CheckCircle, XCircle, Calendar } from "lucide-
 export default function ContactSection() {
   const t = useTranslations("contact");
   const searchParams = useSearchParams();
-  const submissionType = searchParams.get("topic") === "speaker" ? "speaker" : "contact";
+  const submissionType = searchParams?.get("topic") === "speaker" ? "speaker" : "contact";
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState<{type: 'success' | 'error', text: string} | null>(null);
 
