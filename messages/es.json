@@ -33,10 +33,81 @@
     "speakerCta": "Agéndame como speaker"
   },
   "services": {
-    "clientsIndustries": "Clientes e Industrias",
-    "pressVisibility": "Prensa y Visibilidad",
-    "description": "Con más de 400 publicaciones para nuestros clientes y más de 50 eventos creados a la medida, nos hemos consolidado como actores clave en el ecosistema tech en Colombia y LATAM. Empresas globales como DEEL, Blackrock, startups promesas de Forbes como Yuno y Celes, VCs destacados como FEMSA Ventures, Newtopia VC, Latitud, y Colombia Tech Week, el evento local más importante, han confiado en nosotros.",
-    "seeAllClients": "VER TODOS LOS CLIENTES",
+    "filtersAriaLabel": "Filtros de servicios",
+    "filters": {
+      "freePress": "Free Press",
+      "mediaAdvertising": "Pauta Publicitaria en medios",
+      "experienceDesign": "Diseño de experiencias y dirección de arte",
+      "eventProduction": "Producción de eventos y BTL",
+      "mediaOutreach": "Convocatoria de medios",
+      "corporateMerch": "Merch y SWAGS corporativo",
+      "venueScouting": "Venue scouting",
+      "influencerMarketing": "Influencer Marketing",
+      "photoVideoCoverage": "Cubrimiento fotográfico y audiovisual",
+      "podcastLivestream": "Producción de podcasts y live streaming"
+    },
+    "details": {
+      "freePress": {
+        "kicker": "MEDIOS GANADOS · PR TECH · LATAM",
+        "title": "Prensa y Visibilidad",
+        "description": "Con más de 400 publicaciones para nuestros clientes y más de 50 eventos a la medida, nos hemos consolidado como actores clave del ecosistema tech en Colombia y LATAM. Empresas globales como DEEL, Blackrock, startups promesa de Forbes como Yuno y Celes, VCs destacados como FEMSA Ventures, Newtopia VC, Latitud, y Colombia Tech Week, el evento local más importante, han confiado en nosotros.",
+        "ctaText": "VER TODOS LOS CLIENTES"
+      },
+      "mediaAdvertising": {
+        "kicker": "PAUTA DIGITAL · PROGRAMÁTICA · MEDIOS",
+        "title": "Pauta Publicitaria en Medios",
+        "description": "Diseñamos y ejecutamos campañas de pauta paga en medios digitales, impresos, OOH y broadcast que llegan a tus compradores donde realmente deciden. Desde display programático y paid social en LinkedIn y Meta hasta apariciones de alto impacto en prensa de negocios y lifestyle, cada peso invertido se mide en resultados: pipeline, recordación de marca y conversión.",
+        "ctaText": "SOLICITAR UN PLAN DE MEDIOS"
+      },
+      "experienceDesign": {
+        "kicker": "EXPERIENCIA DE MARCA · DIRECCIÓN CREATIVA · IDENTIDAD VISUAL",
+        "title": "Diseño de Experiencias y Dirección de Arte",
+        "description": "Construimos sistemas visuales y experiencias de marca que convierten tu historia en algo memorable. Nuestro equipo desarrolla dirección creativa, identidad y narrativa para lanzamientos, campañas y eventos inmersivos, asegurando que cada punto de contacto se sienta intencional y on-brand, desde el escenario hasta los activos digitales.",
+        "ctaText": "VER NUESTRO TRABAJO"
+      },
+      "eventProduction": {
+        "kicker": "MARKETING EXPERIENCIAL · BTL · EVENTOS TECH",
+        "title": "Producción de Eventos y BTL",
+        "description": "Desde cenas privadas con inversionistas y lanzamientos de producto hasta conferencias de gran formato y activaciones BTL, manejamos la producción de punta a punta: concepto, logística, proveedores, ejecución on-site y analítica post-evento. Hemos entregado más de 500 experiencias en LATAM, Estados Unidos y Europa para startups, VCs y marcas globales.",
+        "ctaText": "VER EVENTOS"
+      },
+      "mediaOutreach": {
+        "kicker": "RELACIONES CON PRENSA · PITCHING · MEDIOS CLAVE",
+        "title": "Convocatoria y Relación con Medios",
+        "description": "Abrimos las puertas que importan. Curamos listas de medios y hacemos pitching directo a periodistas de los principales outlets de negocios, tecnología y nicho en más de 12 países. Con relaciones de largo plazo en Forbes, Bloomberg Línea, Contxto, El Tiempo, La Nación y más, conseguimos la cobertura que genera confianza con inversionistas, clientes y ecosistema.",
+        "ctaText": "VER RESULTADOS EN MEDIOS"
+      },
+      "corporateMerch": {
+        "kicker": "MERCHANDISING · GIFTING CORPORATIVO · SWAG",
+        "title": "Merch y SWAG Corporativo",
+        "description": "Merch que tu equipo y tus clientes sí quieren conservar. Diseñamos, producimos y entregamos apparel, accesorios tech, kits sostenibles y cajas de onboarding para startups y marcas globales. Desde un drop de 50 piezas para un lanzamiento hasta programas de swag para empleados en varios países, manejamos producción y logística en LATAM y Estados Unidos.",
+        "ctaText": "COTIZAR MI MERCH"
+      },
+      "venueScouting": {
+        "kicker": "BÚSQUEDA DE LOCACIONES · ESPACIOS DE EVENTO · SCOUTING",
+        "title": "Venue Scouting",
+        "description": "Conocemos los rooftops, clubes privados, galerías, viñedos y centros de convenciones que elevan una marca. Hacemos scouting, negociamos y contratamos los venues que se ajustan a tu audiencia, formato y presupuesto, en más de 10 ciudades de Latinoamérica, Estados Unidos y Europa. Tú piensas la experiencia; nosotros nos encargamos del resto.",
+        "ctaText": "CUÉNTANOS TU EVENTO"
+      },
+      "influencerMarketing": {
+        "kicker": "CREADORES · INFLUENCERS B2B · LATAM",
+        "title": "Influencer Marketing",
+        "description": "Identificamos, briefeamos y ejecutamos campañas con creadores y voces de autoridad que ya hablan con tu audiencia: founders, VCs, voces fintech, hosts de lifestyle y reviewers de tecnología. Desde activaciones con un creador hasta programas multimercado, manejamos briefs, contratos, aprobación de contenido y reportes basados en data de performance.",
+        "ctaText": "ARMAR UNA CAMPAÑA"
+      },
+      "photoVideoCoverage": {
+        "kicker": "FOTOGRAFÍA DE EVENTOS · VIDEO CORPORATIVO · CAPTURA",
+        "title": "Cubrimiento Fotográfico y Audiovisual",
+        "description": "Convertimos cada evento en una máquina de contenido. Nuestros equipos entregan cobertura profesional de foto y video —recap reels, entrevistas a founders, cortes para redes y material listo para broadcast— en horas, no días. Diseñado para press kits, recap post-evento, distribución pagada y la próxima presentación de tu equipo comercial.",
+        "ctaText": "VER NUESTROS REELS"
+      },
+      "podcastLivestream": {
+        "kicker": "PRODUCCIÓN DE PODCASTS · LIVE STREAMING · BROADCAST",
+        "title": "Producción de Podcasts y Live Streaming",
+        "description": "Producimos podcasts de marca y transmisiones en vivo que posicionan a tus founders y clientes como las voces que el ecosistema sigue. Desde estrategia de show y curaduría de invitados hasta grabación en estudio, transmisión multicámara en LinkedIn y YouTube, y notas, transcripciones y clips optimizados para SEO que siguen rankeando mucho después del episodio.",
+        "ctaText": "LANZAR UN SHOW"
+      }
+    },
     "galleryItems": {
       "designContentTitle": "DISEÑO DE CONTENIDO GRÁFICO",
       "designContentDescription": "Creamos diseños visuales que cautivan y comunican la esencia de tu marca.",
@@ -161,7 +232,17 @@
   "press": {
     "title": "Noticias",
     "noNews": "No hay noticias disponibles",
-    "seeMore": "Ver más"
+    "seeMore": "Ver más",
+    "filters": {
+      "client": "Cliente",
+      "country": "País",
+      "vertical": "Vertical",
+      "allClients": "Todos los clientes",
+      "allCountries": "Todos los países",
+      "allVerticals": "Todos los verticales",
+      "clear": "Limpiar filtros",
+      "count": "{count, plural, =0 {Sin resultados} =1 {1 nota} other {# notas}}"
+    }
   },
   "clients": {
     "title": "Clientes",

@@ -9,6 +9,34 @@ import { useState } from "react";
 
 const images = [...Array(15)].map((_, i) => `/images/eventos/evento${i + 1}.png`);
 
+const principalesLogos = [
+    "blackrock", "latitud", "huawei", "deel", "dapper",
+    "yuno", "morado", "femsa-ventures", "universidad-ean", "trii",
+    "latin-leap", "pantera-makers", "treble-ai", "minka", "ccb",
+    "colombia-tech-week", "cc-tunja", "bunker", "patagon-ai", "mono",
+    "newtopia", "ontop", "plenti", "mitho", "apparta",
+];
+
+const secundariosDLogos = [
+    "hunty", "dapta", "kravata", "biznation", "xaldigital",
+    "briter-bridges", "bifidice", "milio", "samay-health", "cinko",
+    "suricata-labs", "usaria", "tropifresh", "payflow", "revelo",
+    "servitel", "refacil", "retri", "learninc", "wallib",
+    "creditop", "encuadrado", "minteo", "socialab",
+    "eatable-adventures", "bonda", "dils",
+    "finup", "juzto", "snauu",
+];
+
+const secundariosILogos = [
+    "zulu", "fastfold", "phylolegal", "supra", "tropykus",
+    "provectus", "cluvi", "getceles", "lizit", "sytrex",
+    "quix", "teramind", "taxflow", "capa",
+    "tuulapp", "arkangel", "properix", "codiversity",
+    "hallos", "miia", "paula-ferrada", "arthur-d-little", "arch-finance",
+    "dondo", "autoparti", "davinci-tech", "masproducciones",
+    "ridery", "puras-duras", "aceleradora-401",
+];
+
 function Capsule({ label }: { label: string }) {
     return (
         <div className="px-4 py-2 bg-orange-50 text-orange-800 border border-orange-800 text-sm rounded-full shadow-sm hover:bg-orange-200 transition">
@@ -40,18 +68,18 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="hidden md:grid grid-cols-5 grid-rows-5 gap-4 justify-items-center items-center"
+                    className="hidden md:grid grid-cols-5 grid-rows-6 gap-4 justify-items-center items-center"
                 >
-                    {[...Array(25)].map((_, index) => (
+                    {secundariosDLogos.map((name, index) => (
                         <motion.div
-                            key={index}
+                            key={name}
                             whileHover={{ scale: 1.2 }}
                             transition={{ duration: 0.3 }}
                         >
                             <div className="w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center">
                                 <Image
-                                    src={`/images/clientes/secundarios_d/clientedark${index + 1}.png`}
-                                    alt={`Client ${index + 1}`}
+                                    src={`/images/clientes/secundarios_d/${name}.png`}
+                                    alt={name}
                                     width={59}
                                     height={59}
                                     className="object-contain"
@@ -66,18 +94,18 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="bg-black mx-2 px-2 shadow-md shadow-black grid grid-cols-5 grid-rows-4 gap-4 justify-items-center items-center"
+                    className="bg-black mx-2 px-2 shadow-md shadow-black grid grid-cols-5 grid-rows-5 gap-4 justify-items-center items-center"
                 >
-                    {[...Array(20)].map((_, index) => (
+                    {principalesLogos.map((name) => (
                         <motion.div
-                            key={index}
+                            key={name}
                             whileHover={{ scale: 1.2 }}
                             transition={{ duration: 0.3 }}
                         >
                             <div className="w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center">
                                 <Image
-                                    src={`/images/clientes/principales/clientelight${index + 1}.png`}
-                                    alt={`Client ${index + 1}`}
+                                    src={`/images/clientes/principales/${name}.png`}
+                                    alt={name}
                                     width={70}
                                     height={70}
                                     className="object-contain"
@@ -91,18 +119,18 @@ export default function ClientSection() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className=" grid mx-6 grid-cols-5 grid-rows-5 gap-4 justify-items-center items-center"
+                    className=" grid mx-6 grid-cols-5 grid-rows-6 gap-4 justify-items-center items-center"
                 >
-                    {[...Array(25)].map((_, index) => (
+                    {secundariosILogos.map((name) => (
                         <motion.div
-                            key={index}
+                            key={name}
                             whileHover={{ scale: 1.2 }}
                             transition={{ duration: 0.3 }}
                         >
                             <div className="w-16 h-16 lg:w-24 lg:h-24 flex items-center justify-center">
                                 <Image
-                                    src={`/images/clientes/secundarios_i/clientedark${index + 1}.png`}
-                                    alt={`Client ${index + 1}`}
+                                    src={`/images/clientes/secundarios_i/${name}.png`}
+                                    alt={name}
                                     width={59}
                                     height={59}
                                     className="object-contain"
@@ -118,16 +146,16 @@ export default function ClientSection() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="md:hidden mx-4 grid grid-cols-4 grid-rows-6 gap-4 justify-items-center items-center"
                 >
-                    {[...Array(24)].map((_, index) => (
+                    {secundariosDLogos.slice(0, 24).map((name) => (
                         <motion.div
-                            key={index}
+                            key={name}
                             whileHover={{ scale: 1.2 }}
                             transition={{ duration: 0.3 }}
                         >
                             <div className="w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center">
                                 <Image
-                                    src={`/images/clientes/secundarios_d/clientedark${index + 1}.png`}
-                                    alt={`Client ${index + 1}`}
+                                    src={`/images/clientes/secundarios_d/${name}.png`}
+                                    alt={name}
                                     width={59}
                                     height={59}
                                     className="object-contain"
