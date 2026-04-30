@@ -2,56 +2,48 @@
 
 import React from "react";
 import Image from "next/image";
-import { Mail, Linkedin } from "lucide-react";
+import Link from "next/link";
+import { Mail, Linkedin, Calendar, Mic } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function AboutUsSection() {
   const t = useTranslations("about");
   const locale = useLocale();
 
-  // Asegúrate de que el `locale` esté disponible antes de renderizar
   if (!locale) return null;
 
   return (
-    <section key={locale} className="dark:bg-zinc-900 py-28 text-3xl">
+    <section
+      key={locale}
+      className="bg-white dark:bg-zinc-900 py-20 md:py-28"
+    >
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row gap-12 items-start">
-          {/* Columna Izquierda: Logo + Información de LENS PR */}
-          <div className="md:w-1/2 space-y-6">
-            <h3 className="text-2xl font-bold text-black dark:text-white">
-              {t("lensPRInfo.title")}
-            </h3>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              {t("lensPRInfo.paragraph1")}
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              {t("lensPRInfo.paragraph2")}
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              {t("lensPRInfo.paragraph3")}
-            </p>
-          </div>
-
-          {/* Columna Derecha: Foto de Laura + Info + Sobre mí */}
-          <div className="md:w-1/2 flex flex-col items-center md:items-start space-y-6">
-            {/* Foto de Laura */}
-            <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-lg">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-stretch">
+          {/* Columna Izquierda: Foto grande */}
+          <div className="md:col-span-5 flex flex-col">
+            <div
+              className="relative flex-1 w-full min-h-[500px] rounded-3xl overflow-hidden"
+              style={{
+                maskImage:
+                  "radial-gradient(ellipse 95% 100% at 50% 50%, #000 35%, transparent 100%)",
+                WebkitMaskImage:
+                  "radial-gradient(ellipse 95% 100% at 50% 50%, #000 35%, transparent 100%)",
+              }}
+            >
               <Image
                 src="/images/laura.jpeg"
-                alt="Laura Forero"
+                alt="Laura M Forero"
                 fill
                 className="object-cover"
+                priority
               />
             </div>
 
-            {/* Datos de contacto */}
-            <div className="text-center md:text-left">
-              <h3 className="text-xl font-bold text-black dark:text-white mt-2">
-                Laura Forero
-              </h3>
-
-              {/* Íconos de contacto */}
-              <div className="flex items-center justify-center md:justify-start gap-4 mt-4">
+            <div className="mt-6">
+              <h2 className="text-3xl font-bold text-black dark:text-white">
+                Laura M Forero
+              </h2>
+              <div className="flex items-center gap-4 mt-3">
                 <a
                   href="mailto:laura@lenspr.com"
                   className="text-black dark:text-white hover:text-orange-400 dark:hover:text-orange-400 transition"
@@ -70,16 +62,57 @@ export default function AboutUsSection() {
                 </a>
               </div>
             </div>
+          </div>
 
-            {/* Texto “Sobre mí” */}
-            <div>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+          {/* Columna Derecha: Todo el texto organizado */}
+          <div className="md:col-span-7 space-y-10">
+            {/* Sobre Laura */}
+            <div className="space-y-4">
+              <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white">
+                {t("title")}
+              </h3>
+              <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 {t("text1")}
               </p>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 {t("text2")}
               </p>
-             
+            </div>
+
+            {/* Más sobre LENS PR */}
+            <div className="space-y-4 border-t border-gray-200 dark:border-zinc-700 pt-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-black dark:text-white">
+                {t("lensPRInfo.title")}
+              </h3>
+              <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                {t("lensPRInfo.paragraph1")}
+              </p>
+              <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                {t("lensPRInfo.paragraph2")}
+              </p>
+              <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                {t("lensPRInfo.paragraph3")}
+              </p>
+            </div>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <a
+                href="https://calendly.com/laura-lenspr/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center justify-center gap-3 bg-black text-white dark:bg-orange-300 dark:text-black hover:bg-orange-400 hover:text-white dark:hover:bg-orange-400 px-6 py-4 rounded-full text-base font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+              >
+                <Calendar className="w-5 h-5" />
+                <span>{t("scheduleCta")}</span>
+              </a>
+              <Link
+                href={`/${locale}/sections/contact?topic=speaker`}
+                className="group inline-flex items-center justify-center gap-3 bg-white text-black dark:bg-zinc-800 dark:text-white border-2 border-black dark:border-orange-300 hover:bg-orange-400 hover:text-white hover:border-orange-400 dark:hover:bg-orange-400 dark:hover:text-black px-6 py-4 rounded-full text-base font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+              >
+                <Mic className="w-5 h-5" />
+                <span>{t("speakerCta")}</span>
+              </Link>
             </div>
           </div>
         </div>

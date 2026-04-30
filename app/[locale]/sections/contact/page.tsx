@@ -2,10 +2,13 @@
 
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
-import { MapPin, PhoneCall, Mail, CheckCircle, XCircle } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import { MapPin, PhoneCall, Mail, CheckCircle, XCircle, Calendar } from "lucide-react";
 
 export default function ContactSection() {
   const t = useTranslations("contact");
+  const searchParams = useSearchParams();
+  const submissionType = searchParams.get("topic") === "speaker" ? "speaker" : "contact";
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState<{type: 'success' | 'error', text: string} | null>(null);
 
@@ -46,9 +49,22 @@ export default function ContactSection() {
       <div className="max-w-6xl mx-auto">
         {/* Encabezado centrado */}
         <h2 className="text-4xl font-bold mb-4 text-center">{t("title")}</h2>
-        <p className="text-lg text-gray-700 dark:text-gray-300 text-center mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg text-gray-700 dark:text-gray-300 text-center mb-6 max-w-2xl mx-auto leading-relaxed">
           {t("subtitle")}
         </p>
+
+        {/* CTA Calendly: alternativa rápida al formulario */}
+        <div className="flex justify-center mb-10">
+          <a
+            href="https://calendly.com/laura-lenspr/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-orange-300 dark:bg-orange-400 text-zinc-900 hover:bg-zinc-900 hover:text-white px-8 py-4 rounded-full text-base font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+          >
+            <Calendar className="w-5 h-5" />
+            <span>{t("scheduleCallButton")}</span>
+          </a>
+        </div>
 
         {/* Contenedor de columnas */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
@@ -76,6 +92,8 @@ export default function ContactSection() {
             )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Tipo de envío (contact | speaker) — leído del query param ?topic= */}
+              <input type="hidden" name="type" value={submissionType} />
               {/* Nombre */}
               <div>
                 <label htmlFor="name" className="block mb-1 font-medium text-base">
