@@ -28,7 +28,9 @@
       "paragraph1": "A LENS PR é uma agência boutique de relações públicas especializada no setor de tecnologia, com operações em mais de 10 países na América Latina, nos EUA e na Espanha. Conectamos fundadores, startups e fundos de VC com seus públicos ou clientes por meio de estratégias tailor-made de imprensa, comunicação, eventos de alto nível e alianças estratégicas.",
       "paragraph2": "Com mais de 400 publicações para nossos clientes e mais de 50 eventos personalizados, nos consolidamos como atores relevantes no ecossistema de tecnologia na Colômbia e na América Latina.",
       "paragraph3": "Empresas globais como DEEL, Blackrock, startups promissoras da Forbes como Yuno e Celes, e VCs de destaque como FEMSA Ventures, Newtopia VC, Latitud, além do evento mais importante do ecossistema local, o Colombia Tech Week, confiaram em nós."
-    }
+    },
+    "scheduleCta": "Agendar reunião ou conferência",
+    "speakerCta": "Me convide como palestrante"
   },
   "services": {
     "clientsIndustries": "Clientes e Indústrias",
@@ -153,7 +155,8 @@
     "phoneValue": "+57 301 6953041",
     "emailValue": "info@lenspr.com",
     "successMessage": "Mensagem enviada com sucesso! Entraremos em contato em breve.",
-    "errorMessage": "Houve um erro ao enviar a mensagem. Tente novamente."
+    "errorMessage": "Houve um erro ao enviar a mensagem. Tente novamente.",
+    "scheduleCallButton": "Agendar uma chamada"
   },
   "press": {
     "title": "Notícias",
