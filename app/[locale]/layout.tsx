@@ -55,7 +55,7 @@ export default async function RootLayout({
         </head>
         <body className="flex flex-col h-[100dvh] font-roboto bg-white dark:bg-zinc-900 dark:text-white">
           <Header showBlog={showBlogInNav} />
-          <main className="flex-grow pt-20 md:pt-24">{children}</main>
+          <main className="flex-grow pt-32 md:pt-36">{children}</main>
           <Footer locale={locale} />
         </body>
       </html>

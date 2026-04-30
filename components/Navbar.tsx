@@ -50,12 +50,14 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 flex items-center justify-around bg-white dark:bg-zinc-900 text-lg z-50 dark:text-white transition-all duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 right-0 bg-white dark:bg-zinc-900 text-lg z-50 dark:text-white transition-all duration-300 ease-in-out ${
         isScrolled
           ? "py-3 md:py-4 backdrop-blur-md bg-white/95 dark:bg-zinc-900/95 shadow-sm border-b border-gray-100 dark:border-zinc-800"
           : "py-6 md:py-8"
       }`}
     >
+      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20 flex items-center gap-6">
+      <div className="flex-1 flex items-center">
       <Link href={`/${currentLanguage}`}>
         <img
           src="/logo-black.png"
@@ -74,14 +76,15 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           }`} // Modo oscuro: Logo blanco
         />
       </Link>
+      </div>
 
       {/* Menú principal (desktop) */}
-      <ul className="hidden md:flex space-x-14 text-2xl">
+      <ul className="hidden md:flex flex-1 justify-center space-x-14 text-2xl">
         {/* NOSOTROS / ABOUT US */}
         <li>
           <Link
             href={`/${currentLanguage}/sections/aboutus`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+            className="whitespace-nowrap text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("aboutUs")}
           </Link>
@@ -91,7 +94,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
         <li>
           <Link
             href={`/${currentLanguage}/sections/services`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+            className="whitespace-nowrap text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("services")}
           </Link>
@@ -101,7 +104,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
         <li>
           <Link
             href={`/${currentLanguage}/sections/clients`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+            className="whitespace-nowrap text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("clients")}
           </Link>
@@ -111,7 +114,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
         <li>
           <Link
             href={`/${currentLanguage}/sections/press`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+            className="whitespace-nowrap text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("press")}
           </Link>
@@ -121,9 +124,19 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
         <li>
           <Link
             href={`/${currentLanguage}/sections/events`}
-            className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+            className="whitespace-nowrap text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("events")}
+          </Link>
+        </li>
+
+        {/* PAÍSES */}
+        <li>
+          <Link
+            href={`/${currentLanguage}/sections/countries`}
+            className="whitespace-nowrap text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+          >
+            {t("countries")}
           </Link>
         </li>
 
@@ -132,7 +145,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           <li>
             <Link
               href={`/${currentLanguage}/sections/ctw`}
-              className="text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+              className="whitespace-nowrap text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
             >
               CTW
             </Link>
@@ -141,7 +154,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
       </ul>
 
       {/* Botones de Language y Contact (desktop) */}
-      <div className="hidden md:flex items-center space-x-16">
+      <div className="hidden md:flex flex-1 justify-end items-center space-x-16">
         <div
           className="relative"
           onMouseEnter={() => setIsLanguageOpen(true)}
@@ -287,6 +300,16 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                 {t("events")}
               </Link>
             </li>
+            {/* Países */}
+            <li>
+              <Link
+                href={`/${currentLanguage}/sections/countries`}
+                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("countries")}
+              </Link>
+            </li>
             {/* CTW (feature flag móvil) */}
             {ENABLE_CTW && (
               <li>
@@ -361,6 +384,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           </ul>
         </div>
       )}
+      </div>
     </nav>
   );
 }
