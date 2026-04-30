@@ -16,13 +16,13 @@
     "contact": "Contato",
     "spanish": "Espanhol",
     "english": "Inglês",
-    "portuguese": "Português"
+    "portuguese": "Português",
+    "countries": "Países"
   },
   "about": {
     "title": "Sobre Mim",
     "text1": "Eu sou Laura Forero, cofundadora da Colombia Tech Week, Tech Fest e Lens PR empreendedora e especialista em relações públicas apaixonada pela criação de comunidades, imprensa, eventos e fortalecimento de ecossistemas para startups, fundos de VC, instituições financeiras e entidades públicas ou privadas na Colômbia e na América Latina.",
     "text2": "Com mais de 10 anos de experiência em relações públicas, estratégias de comunicação e programas de alto impacto em empreendedorismo para governo, cooperação e empresas, aprendi a entender detalhadamente as necessidades do setor tech e a levar as marcas para um novo patamar.",
-
     "lensPRInfo": {
       "title": "Mais sobre a LENS PR",
       "paragraph1": "A LENS PR é uma agência boutique de relações públicas especializada no setor de tecnologia, com operações em mais de 10 países na América Latina, nos EUA e na Espanha. Conectamos fundadores, startups e fundos de VC com seus públicos ou clientes por meio de estratégias tailor-made de imprensa, comunicação, eventos de alto nível e alianças estratégicas.",
@@ -265,5 +265,37 @@
     "institutions": "Instituições, Ecossistema e Governo",
     "personalBrand": "Personal Brand",
     "agencies": "Agências"
+  },
+  "countriesPage": {
+    "title": "Países & Cidades",
+    "continents": {
+      "northAmerica": "América do Norte",
+      "centralAmerica": "América Central e Caribe",
+      "southAmerica": "América do Sul",
+      "europe": "Europa"
+    },
+    "list": {
+      "colombia": "Colômbia",
+      "peru": "Peru",
+      "panama": "Panamá",
+      "ecuador": "Equador",
+      "brasil": "Brasil",
+      "chile": "Chile",
+      "argentina": "Argentina",
+      "uruguay": "Uruguai",
+      "costaRica": "Costa Rica",
+      "repDominicana": "Rep. Dominicana",
+      "mexico": "México",
+      "texas": "Texas",
+      "florida": "Flórida",
+      "sanFranciscoBayArea": "São Francisco e Bay Area",
+      "espana": "Espanha",
+      "francia": "França",
+      "guatemala": "Guatemala",
+      "honduras": "Honduras",
+      "elSalvador": "El Salvador",
+      "nicaragua": "Nicarágua",
+      "paraguay": "Paraguai"
+    }
   }
 }
