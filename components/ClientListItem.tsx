@@ -32,6 +32,19 @@ export default function ClientListItem({ client }: ClientListItemProps) {
     }
   }, [open, client.id, locale]);
 
+  if (client.website) {
+    return (
+      <a
+        href={client.website}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-left text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200 py-1 text-sm md:text-base"
+      >
+        {client.name}
+      </a>
+    );
+  }
+
   return (
     <>
       <button

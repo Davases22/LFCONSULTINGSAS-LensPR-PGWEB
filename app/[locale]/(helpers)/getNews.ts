@@ -15,6 +15,13 @@ type NewsRow = {
   title_portuguese?: string | null;
   description_portuguese?: string | null;
   editorial_portuguese?: string | null;
+  client_name?: string | null;
+  country?: string | null;
+  vertical?: string | null;
+  relevance?: string | null;
+  news_link?: string | null;
+  is_story?: boolean | null;
+  published_at?: string | null;
 };
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
@@ -41,11 +48,12 @@ export async function getNewsByLocale(locale: string) {
     editorialColumn = "editorial_spanish";
   }
 
-  // Obtener todos los datos y manejar la ausencia de columnas, ordenados por order_number
+  // Más reciente primero (published_at), fallback a created_at para empates
   const { data, error } = await supabase
     .from("news")
     .select("*")
-    .order("order_number", { ascending: true }); // Ordenar por order_number de menor a mayor
+    .order("published_at", { ascending: false, nullsFirst: false })
+    .order("created_at", { ascending: false });
 
   if (error) {
     console.error("Error fetching news:", error);
@@ -59,8 +67,15 @@ export async function getNewsByLocale(locale: string) {
     createdAt: item.created_at,
     clientId: item.client_id,
     title: item[titleColumn] ?? "Título no disponible",
-    description: item[descriptionColumn] ?? "Descripción no disponible",
-    editorial: item[editorialColumn] ?? null, // Puede ser null si no existe
+    description: item[descriptionColumn] ?? "",
+    editorial: item[editorialColumn] ?? null,
+    clientName: item.client_name ?? null,
+    country: item.country ?? null,
+    vertical: item.vertical ?? null,
+    relevance: item.relevance ?? null,
+    newsLink: item.news_link ?? null,
+    isStory: item.is_story ?? false,
+    publishedAt: item.published_at ?? null,
   }));
 }
 
@@ -84,12 +99,13 @@ export async function getNewsByClientId(clientId: string, locale: string) {
     editorialColumn = "editorial_spanish";
   }
 
-  // Obtener noticias filtradas por client_id, ordenadas por order_number
+  // Noticias del cliente, más recientes primero
   const { data, error } = await supabase
     .from("news")
     .select("*")
     .eq("client_id", clientId)
-    .order("order_number", { ascending: true }); // Ordenar por order_number de menor a mayor
+    .order("published_at", { ascending: false, nullsFirst: false })
+    .order("created_at", { ascending: false });
 
   if (error) {
     console.error("Error fetching client news:", error);
@@ -103,7 +119,14 @@ export async function getNewsByClientId(clientId: string, locale: string) {
     createdAt: item.created_at,
     clientId: item.client_id,
     title: item[titleColumn] ?? "Título no disponible",
-    description: item[descriptionColumn] ?? "Descripción no disponible",
-    editorial: item[editorialColumn] ?? null, // Puede ser null si no existe
+    description: item[descriptionColumn] ?? "",
+    editorial: item[editorialColumn] ?? null,
+    clientName: item.client_name ?? null,
+    country: item.country ?? null,
+    vertical: item.vertical ?? null,
+    relevance: item.relevance ?? null,
+    newsLink: item.news_link ?? null,
+    isStory: item.is_story ?? false,
+    publishedAt: item.published_at ?? null,
   }));
 }

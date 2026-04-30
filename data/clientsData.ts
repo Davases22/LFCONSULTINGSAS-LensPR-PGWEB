@@ -6,205 +6,213 @@ export const clientsData: ClientsData = {
       id: "hrtech",
       name: "HRTech",
       clients: [
-        { id: "deel-hr", name: "Deel", category: "hrtech" },
-        { id: "hunty", name: "HUNTY", category: "hrtech" },
-        { id: "revelo", name: "Revelo", category: "hrtech" },
-        { id: "ontop-hr", name: "Ontop", category: "hrtech" }
+        { id: "deel-hr", name: "Deel", category: "hrtech", website: "https://www.deel.com" },
+        { id: "hunty", name: "HUNTY", category: "hrtech", website: "https://hunty.com" },
+        { id: "revelo", name: "Revelo", category: "hrtech", website: "https://www.revelo.com" },
+        { id: "ontop-hr", name: "Ontop", category: "hrtech", website: "https://www.getontop.com" },
+        { id: "bonda", name: "Bonda", category: "hrtech", website: "https://bonda.co" }
       ]
     },
     {
       id: "finance-wealth",
-      name: "Finance & Wealth Management",
+      name: "Finanzas y Gestión Patrimonial",
       clients: [
         {
           id: "blackrock",
           name: "BlackRock",
           category: "finance-wealth",
           description: "BlackRock es la firma de gestión de activos más grande del mundo.",
-          media_url: "",
           website: "https://www.blackrock.com"
         }
       ]
     },
     {
       id: "venture-capital",
-      name: "Fondos de Inversión / VC",
+      name: "Fondos de Inversión / VC & Aceleradoras",
       clients: [
-        { id: "femsa-ventures", name: "FEMSA Ventures (CVC)", category: "venture-capital" },
-        { id: "latin-leap", name: "Latin Leap", category: "venture-capital" },
-        { id: "newtopia", name: "Newtopia", category: "venture-capital" },
-        { id: "latitud", name: "Latitud", category: "venture-capital" },
-        { id: "eatable-adventures", name: "Eatable Adventures", category: "venture-capital" }
+        { id: "femsa-ventures", name: "FEMSA Ventures (CVC)", category: "venture-capital", website: "https://www.femsaventures.com" },
+        { id: "latin-leap", name: "Latin Leap", category: "venture-capital", website: "https://latinleap.vc" },
+        { id: "newtopia", name: "Newtopia", category: "venture-capital", website: "https://newtopia.vc" },
+        { id: "latitud", name: "Latitud", category: "venture-capital", website: "https://latitud.com" },
+        { id: "eatable-adventures", name: "Eatable Adventures", category: "venture-capital", website: "https://www.eatableadventures.com" },
+        { id: "suricata-labs", name: "Suricata Labs", category: "venture-capital", website: "https://suricatalabs.com" },
+        { id: "socialab", name: "Socialab", category: "venture-capital", website: "https://socialab.com" },
+        { id: "pantera-makers", name: "Pantera Makers", category: "venture-capital", website: "https://panteramakers.com" }
       ]
     },
     {
       id: "fintech",
       name: "Fintech (pagos, crédito, inversión, payroll)",
       clients: [
-        { id: "deel", name: "Deel", category: "fintech" },
-        { id: "ontop", name: "Ontop", category: "fintech" },
-        { id: "supra", name: "Supra", category: "fintech" },
-        { id: "milio", name: "Milio", category: "fintech" },
-        { id: "mono", name: "Mono", category: "fintech" },
-        { id: "cinko", name: "Cinko", category: "fintech" },
-        { id: "payflow", name: "Payflow", category: "fintech" },
-        { id: "refacil", name: "Refácil", category: "fintech" },
-        { id: "creditop", name: "Creditop", category: "fintech" },
-        { id: "yuno", name: "Yuno", category: "fintech" },
-        { id: "trii", name: "Trii", category: "fintech" },
-        { id: "minka", name: "Minka", category: "fintech" },
-        { id: "taxflow", name: "Taxflow", category: "fintech" },
-        { id: "plenti", name: "Plenti", category: "fintech" },
-        { id: "zulu", name: "Zulu", category: "fintech" },
-        { id: "bunker", name: "Bunker", category: "fintech" },
-        { id: "morado", name: "Morado", category: "fintech" }
+        { id: "supra", name: "Supra", category: "fintech", website: "https://supra.com" },
+        { id: "milio", name: "Milio", category: "fintech", website: "https://milio.co" },
+        { id: "mono", name: "Mono", category: "fintech", website: "https://cuentamono.com" },
+        { id: "cinko", name: "Cinko", category: "fintech", website: "https://cinko.co" },
+        { id: "payflow", name: "Payflow", category: "fintech", website: "https://payflow.es" },
+        { id: "refacil", name: "Refácil", category: "fintech", website: "https://refacil.com" },
+        { id: "creditop", name: "Creditop", category: "fintech", website: "https://creditop.co" },
+        { id: "yuno", name: "Yuno", category: "fintech", website: "https://y.uno" },
+        { id: "trii", name: "Trii", category: "fintech", website: "https://trii.co" },
+        { id: "minka", name: "Minka", category: "fintech", website: "https://minka.inc" },
+        { id: "taxflow", name: "Taxflow", category: "fintech", website: "https://taxflow.co" },
+        { id: "plenti", name: "Plenti", category: "fintech", website: "https://plenti.app" },
+        { id: "zulu", name: "Zulu", category: "fintech", website: "https://zulu.co" },
+        { id: "bunker", name: "Bunker", category: "fintech", website: "https://bunker.com" },
+        { id: "morado", name: "Morado", category: "fintech", website: "https://moradoapp.com" },
+        { id: "finup", name: "FinUp", category: "fintech", website: "https://finup.com.ar" }
       ]
     },
     {
       id: "web3-crypto",
       name: "Web3 / Cripto / Blockchain",
       clients: [
-        { id: "kravata", name: "Kravata", category: "web3-crypto" },
-        { id: "minteo", name: "Minteo", category: "web3-crypto" },
-        { id: "tropykus", name: "Tropykus", category: "web3-crypto" },
-        { id: "arch-finance", name: "Arch Finance", category: "web3-crypto" },
+        { id: "kravata", name: "Kravata", category: "web3-crypto", website: "https://kravata.co" },
+        { id: "minteo", name: "Minteo", category: "web3-crypto", website: "https://minteo.com" },
+        { id: "tropykus", name: "Tropykus", category: "web3-crypto", website: "https://tropykus.com" },
+        { id: "arch-finance", name: "Arch Finance", category: "web3-crypto", website: "https://arch.finance" },
         { id: "capa", name: "Capa", category: "web3-crypto" },
-        { id: "hallos", name: "Hallos", category: "web3-crypto" },
-        { id: "wallib", name: "Wallib", category: "web3-crypto" }
+        { id: "hallos", name: "Hallos", category: "web3-crypto", website: "https://hallos.io" },
+        { id: "wallib", name: "Wallib", category: "web3-crypto", website: "https://wallib.com" }
       ]
     },
     {
       id: "saas",
       name: "SaaS",
       clients: [
-        { id: "autoparti", name: "Autoparti", category: "saas" },
-        { id: "getceles", name: "Getceles.com", category: "saas" },
-        { id: "dapper", name: "Dapper", category: "saas" },
-        { id: "sytrex", name: "Sytrex", category: "saas" },
-        { id: "lizit", name: "Lizit", category: "saas" }
+        { id: "autoparti", name: "Autoparti", category: "saas", website: "https://autoparti.com" },
+        { id: "getceles", name: "Getceles", category: "saas", website: "https://getceles.com" },
+        { id: "sytrex", name: "Sytrex", category: "saas", website: "https://sytrex.com" },
+        { id: "lizit", name: "Lizit", category: "saas", website: "https://lizit.co" },
+        { id: "encuadrado", name: "Encuadrado", category: "saas", website: "https://encuadrado.com" }
       ]
     },
     {
       id: "proptech-contech",
       name: "PropTech & ConTech",
       clients: [
-        { id: "properix", name: "Properix", category: "proptech-contech" },
-        { id: "retri", name: "Retri", category: "proptech-contech" }
-      ]
-    },
-    {
-      id: "accelerators",
-      name: "Aceleradoras / Hubs",
-      clients: [
-        { id: "suricata-labs", name: "Suricata Labs", category: "accelerators" },
-        { id: "socialab", name: "Socialab", category: "accelerators" },
-        { id: "pantera-makers", name: "Pantera Makers", category: "accelerators" }
-      ]
-    },
-    {
-      id: "marketplaces",
-      name: "Marketplaces",
-      clients: [
-        { id: "snauu", name: "Snauu", category: "marketplaces" }
-      ]
-    },
-    {
-      id: "agri-foodtech",
-      name: "Agri & FoodTech",
-      clients: [
-        { id: "apparta", name: "Apparta", category: "agri-foodtech" },
-        { id: "tropifresh", name: "TropiFresh", category: "agri-foodtech" },
-        { id: "bifidice", name: "Bifid·ice", category: "agri-foodtech" },
-        { id: "cluvi", name: "Cluvi", category: "agri-foodtech" }
-      ]
-    },
-    {
-      id: "healthtech-pettech",
-      name: "HealthTech & PetTech",
-      clients: [
-        { id: "samay-health", name: "Samay Health", category: "healthtech-pettech" },
-        { id: "arkangel", name: "Arkangel.ai", category: "healthtech-pettech" },
-        { id: "fastfold", name: "Fastfold", category: "healthtech-pettech" },
-        { id: "miia", name: "MIIA", category: "healthtech-pettech" }
-      ]
-    },
-    {
-      id: "edtech",
-      name: "EdTech & Formación",
-      clients: [
-        { id: "biznation", name: "BizNation", category: "edtech" },
-        { id: "codiversity", name: "Codiversity", category: "edtech" },
-        { id: "universidad-ean", name: "Universidad EAN", category: "edtech" },
-        { id: "learninc", name: "Learninc", category: "edtech" },
-        { id: "quix", name: "Quix", category: "edtech" }
-      ]
-    },
-    {
-      id: "legaltech",
-      name: "LegalTech",
-      clients: [
-        { id: "phylolegal", name: "Phylolegal", category: "legaltech" },
-        { id: "juzto", name: "Juzto", category: "legaltech" },
-        { id: "arthur-d-little", name: "Arthur D. Little", category: "legaltech" }
+        { id: "properix", name: "Properix", category: "proptech-contech", website: "https://properix.com" },
+        { id: "retri", name: "Retri", category: "proptech-contech", website: "https://retri.co" },
+        { id: "dils", name: "Dils (Lucas Fox)", category: "proptech-contech", website: "https://dils.com" }
       ]
     },
     {
       id: "ai-automation",
       name: "Inteligencia Artificial (IA) y Automatización",
       clients: [
-        { id: "dapta", name: "Dapta", category: "ai-automation" },
-        { id: "patagon-ai", name: "Patagon AI", category: "ai-automation" },
-        { id: "provectus", name: "Provectus", category: "ai-automation" },
-        { id: "treble-ai", name: "treble.ai", category: "ai-automation" }
+        { id: "dapta", name: "Dapta", category: "ai-automation", website: "https://dapta.com" },
+        { id: "patagon-ai", name: "Patagon AI", category: "ai-automation", website: "https://patagon.ai" },
+        { id: "provectus", name: "Provectus", category: "ai-automation", website: "https://provectus.com" },
+        { id: "treble-ai", name: "treble.ai", category: "ai-automation", website: "https://treble.ai" }
       ]
     },
     {
-      id: "business-intelligence",
-      name: "Business Intelligence (BI) & Public Affairs Intelligence",
+      id: "healthtech-pettech",
+      name: "HealthTech & PetTech",
       clients: [
-        { id: "dapper-bi", name: "Dapper", category: "business-intelligence" },
-        { id: "briter", name: "Briter", category: "business-intelligence" }
+        { id: "samay-health", name: "Samay Health", category: "healthtech-pettech", website: "https://samayhealth.com" },
+        { id: "arkangel", name: "Arkangel.ai", category: "healthtech-pettech", website: "https://arkangel.ai" },
+        { id: "fastfold", name: "Fastfold", category: "healthtech-pettech", website: "https://fastfold.com" },
+        { id: "miia", name: "MIIA", category: "healthtech-pettech", website: "https://miia.ai" }
+      ]
+    },
+    {
+      id: "edtech",
+      name: "EdTech & Formación",
+      clients: [
+        { id: "biznation", name: "BizNation", category: "edtech", website: "https://thebiznation.com" },
+        { id: "codiversity", name: "Codiversity", category: "edtech", website: "https://codiversity.com" },
+        { id: "universidad-ean", name: "Universidad EAN", category: "edtech", website: "https://universidadean.edu.co" },
+        { id: "learninc", name: "Learninc", category: "edtech", website: "https://learninc.com" },
+        { id: "quix", name: "Quix", category: "edtech", website: "https://quix.ai" }
       ]
     },
     {
       id: "telecom-it",
       name: "Telecom / IT Services & Cibersecurity",
       clients: [
-        { id: "huawei", name: "Huawei", category: "telecom-it" },
-        { id: "xaldigital", name: "XALDIGITAL", category: "telecom-it" },
-        { id: "servitel", name: "Servitel", category: "telecom-it" },
-        { id: "teramind", name: "Teramind", category: "telecom-it" },
-        { id: "davinci-tech", name: "Davinci Tech", category: "telecom-it" }
+        { id: "huawei", name: "Huawei", category: "telecom-it", website: "https://www.huawei.com" },
+        { id: "xaldigital", name: "XALDIGITAL", category: "telecom-it", website: "https://xaldigital.com" },
+        { id: "servitel", name: "Servitel", category: "telecom-it", website: "https://servitel.co" },
+        { id: "teramind", name: "Teramind", category: "telecom-it", website: "https://www.teramind.co" },
+        { id: "davinci-tech", name: "Davinci Tech", category: "telecom-it", website: "https://davincitech.com" }
       ]
     },
     {
-      id: "ux",
-      name: "UX",
+      id: "legaltech",
+      name: "LegalTech",
       clients: [
-        { id: "usaria", name: "Usaria", category: "ux" }
+        { id: "phylolegal", name: "Phylolegal", category: "legaltech", website: "https://phylolegal.com" },
+        { id: "juzto", name: "Juzto", category: "legaltech", website: "https://juzto.co" },
+        { id: "arthur-d-little", name: "Arthur D. Little", category: "legaltech", website: "https://www.adlittle.com" }
+      ]
+    },
+    {
+      id: "business-intelligence",
+      name: "Business Intelligence (BI) & Public Affairs",
+      clients: [
+        { id: "dapper-bi", name: "Dapper", category: "business-intelligence", website: "https://meetdapper.com" },
+        { id: "briter", name: "Briter", category: "business-intelligence", website: "https://briterbridges.com" }
+      ]
+    },
+    {
+      id: "agri-foodtech",
+      name: "Agri & FoodTech",
+      clients: [
+        { id: "apparta", name: "Apparta", category: "agri-foodtech", website: "https://apparta.co" },
+        { id: "tropifresh", name: "TropiFresh", category: "agri-foodtech", website: "https://tropifresh.com" },
+        { id: "bifidice", name: "Bifid·ice", category: "agri-foodtech" },
+        { id: "cluvi", name: "Cluvi", category: "agri-foodtech", website: "https://cluvi.co" }
+      ]
+    },
+    {
+      id: "marketplaces",
+      name: "Marketplaces & Movilidad",
+      clients: [
+        { id: "snauu", name: "Snauu", category: "marketplaces", website: "https://snauu.com" },
+        { id: "ridery", name: "Ridery", category: "marketplaces", website: "https://ridery.app" }
       ]
     },
     {
       id: "institutions",
       name: "Instituciones, Ecosistema y Gobierno",
       clients: [
-        { id: "colombia-tech-week", name: "Colombia Tech Week", category: "institutions" },
-        { id: "ccb", name: "Cámara de Comercio de Bogotá", category: "institutions" },
-        { id: "cc-tunja", name: "Cámara de Comercio de Tunja", category: "institutions" }
+        { id: "colombia-tech-week", name: "Colombia Tech Week", category: "institutions", website: "https://colombiatechweek.co" },
+        { id: "ccb", name: "Cámara de Comercio de Bogotá", category: "institutions", website: "https://www.ccb.org.co" },
+        { id: "cc-tunja", name: "Cámara de Comercio de Tunja", category: "institutions", website: "https://www.cctunja.org.co" }
+      ]
+    },
+    {
+      id: "ux",
+      name: "UX",
+      clients: [
+        { id: "usaria", name: "Usaria", category: "ux", website: "https://usaria.co" }
       ]
     },
     {
       id: "personal-brand",
-      name: "Personal Brand",
+      name: "Personal Brand & Comunidades",
       clients: [
-        { id: "paula-ferrada", name: "Paula Ferrada", category: "personal-brand" }
+        { id: "paula-ferrada", name: "Paula Ferrada", category: "personal-brand" },
+        { id: "laura-forero", name: "Laura Forero", category: "personal-brand" },
+        { id: "puras-duras", name: "Puras Duras", category: "personal-brand" }
       ]
     },
     {
       id: "agencies",
-      name: "Agencias",
+      name: "Agencias, Eventos y Lifestyle",
       clients: [
-        { id: "masproducciones", name: "masproducciones.co", category: "agencies" }
+        { id: "masproducciones", name: "masproducciones.co", category: "agencies", website: "https://masproducciones.co" },
+        { id: "aceleradora-401", name: "401 Aceleradora", category: "agencies" },
+        { id: "circuito-floral-cartagena", name: "Circuito Floral Cartagena", category: "agencies" },
+        { id: "ceramica-y-vino", name: "Cerámica y Vino", category: "agencies" }
+      ]
+    },
+    {
+      id: "salud-restaurantes",
+      name: "Salud y Restaurantes",
+      clients: [
+        { id: "mitho", name: "Mitho", category: "salud-restaurantes", website: "https://mitho.io" },
+        { id: "dondo", name: "DONDO", category: "salud-restaurantes", website: "https://dondo.com" }
       ]
     }
   ]

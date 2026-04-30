@@ -5,14 +5,17 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 
 export default function NewsCard({ item, text }: { item: any; text: string }) {
   const [open, setOpen] = useState(false);
+  const description = item.description || "";
   const truncatedDescription =
-    item.description.length > 150
-      ? `${item.description.substring(0, 150)}...`
-      : item.description;
+    description.length > 150
+      ? `${description.substring(0, 150)}...`
+      : description;
+
+  const hasMeta = item.clientName || item.country || item.vertical;
 
   return (
     <div className="bg-white dark:bg-zinc-800 rounded-lg shadow p-4 flex flex-col hover:shadow-lg transform hover:scale-[1.01] transition duration-200">
-      {item.mediaUrl && (
+      {item.mediaUrl ? (
         <div className="w-full h-48 overflow-hidden bg-gray-100 dark:bg-zinc-700 flex items-center justify-center">
           <img
             src={item.mediaUrl}
@@ -20,14 +23,41 @@ export default function NewsCard({ item, text }: { item: any; text: string }) {
             className="w-full h-full object-contain"
           />
         </div>
+      ) : (
+        <div className="w-full h-48 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-300 dark:from-zinc-700 dark:to-zinc-600 flex items-center justify-center px-4">
+          <span className="text-xl md:text-2xl font-semibold text-orange-900 dark:text-orange-100 text-center">
+            {item.editorial || ""}
+          </span>
+        </div>
       )}
       <div className="mt-4 flex flex-col flex-1">
+        {hasMeta && (
+          <div className="flex flex-wrap gap-1.5 mb-3">
+            {item.clientName && (
+              <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-black text-white dark:bg-white dark:text-black">
+                {item.clientName}
+              </span>
+            )}
+            {item.country && (
+              <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-orange-100 text-orange-800 border border-orange-200 dark:bg-orange-900/30 dark:text-orange-200 dark:border-orange-800">
+                {item.country}
+              </span>
+            )}
+            {item.vertical && (
+              <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-700 border border-gray-200 dark:bg-zinc-700 dark:text-gray-200 dark:border-zinc-600">
+                {item.vertical}
+              </span>
+            )}
+          </div>
+        )}
         <h2 className="text-xl font-semibold mb-2 text-black dark:text-white">
           {item.title}
         </h2>
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 flex-1">
-          {truncatedDescription}
-        </p>
+        {description && (
+          <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 flex-1">
+            {truncatedDescription}
+          </p>
+        )}
         <p className="text-xs text-gray-500 dark:text-gray-400 italic">
           {item.editorial}
         </p>
@@ -88,10 +118,10 @@ export default function NewsCard({ item, text }: { item: any; text: string }) {
               )}
               
               {/* Link externo si existe */}
-              {item.news_link && (
+              {item.newsLink && (
                 <div className="border-t pt-4">
                   <a
-                    href={item.news_link}
+                    href={item.newsLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm md:text-base transition-colors"

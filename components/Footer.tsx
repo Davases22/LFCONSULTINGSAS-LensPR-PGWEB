@@ -9,7 +9,7 @@ export default function Footer({ locale }: { locale: string }) {
 
   return (
     <footer className="bg-gray-100 dark:bg-zinc-900 text-black dark:text-gray-300 py-16 transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20">
         {/* Links y Redes Sociales */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Columna 1: Información de la Marca */}
