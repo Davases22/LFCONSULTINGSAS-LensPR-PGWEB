@@ -139,7 +139,11 @@
     "events": "Eventos",
     "eventsDescription": "Nossas experiências elevaram marcas e seus públicos-chave em toda a América Latina.",
     "publications": "Publicações",
-    "publicationsDescription": "Contamos histórias. Nossos clientes têm o conteúdo, nós o publicamos."
+    "publicationsDescription": "Contamos histórias. Nossos clientes têm o conteúdo, nós o publicamos.",
+    "brandsCta": "Ver Marcas e Clientes",
+    "countriesCta": "Ver Países",
+    "eventsCta": "Ver Eventos",
+    "publicationsCta": "Ver Imprensa"
   },
   "travelHospitality": {
     "headerTitle": "Conquistas & Indústrias",
@@ -348,7 +352,8 @@
     "ux": "UX",
     "institutions": "Instituições, Ecossistema e Governo",
     "personalBrand": "Personal Brand",
-    "agencies": "Agências"
+    "agencies": "Agências",
+    "saludRestaurantes": "Saúde e Restaurantes"
   },
   "countriesPage": {
     "title": "Países & Cidades",
