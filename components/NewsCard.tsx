@@ -24,8 +24,8 @@ export default function NewsCard({ item, text }: { item: any; text: string }) {
           />
         </div>
       ) : (
-        <div className="w-full h-48 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-300 dark:from-zinc-700 dark:to-zinc-600 flex items-center justify-center px-4">
-          <span className="text-xl md:text-2xl font-semibold text-orange-900 dark:text-orange-100 text-center">
+        <div className="w-full h-48 overflow-hidden bg-gray-100 dark:bg-zinc-700 border border-black dark:border-white flex items-center justify-center px-4">
+          <span className="text-xl md:text-2xl font-semibold text-black dark:text-white text-center">
             {item.editorial || ""}
           </span>
         </div>
@@ -39,7 +39,7 @@ export default function NewsCard({ item, text }: { item: any; text: string }) {
               </span>
             )}
             {item.country && (
-              <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-orange-100 text-orange-800 border border-orange-200 dark:bg-orange-900/30 dark:text-orange-200 dark:border-orange-800">
+              <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-transparent text-black border border-black dark:text-white dark:border-white">
                 {item.country}
               </span>
             )}

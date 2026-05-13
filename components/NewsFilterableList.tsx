@@ -56,7 +56,7 @@ export default function NewsFilterableList({ news, seeMoreText }: Props) {
   const hasActiveFilter = client || country || vertical;
 
   const selectClass =
-    "w-full sm:w-auto min-w-[180px] bg-white dark:bg-zinc-800 border border-gray-300 dark:border-zinc-700 rounded-full px-5 py-3 text-base text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-300 cursor-pointer hover:border-gray-400 dark:hover:border-zinc-600 transition-colors";
+    "w-full sm:w-auto min-w-[180px] bg-white dark:bg-zinc-800 border border-gray-300 dark:border-zinc-700 rounded-full px-5 py-3 text-base text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white cursor-pointer hover:border-black dark:hover:border-white transition-colors";
 
   return (
     <div>
@@ -111,7 +111,7 @@ export default function NewsFilterableList({ news, seeMoreText }: Props) {
               setCountry("");
               setVertical("");
             }}
-            className="text-base font-medium text-orange-600 hover:text-orange-800 dark:text-orange-400 dark:hover:text-orange-300 underline-offset-4 hover:underline"
+            className="text-base font-medium text-black dark:text-white hover:underline underline-offset-4"
           >
             {t("clear")}
           </button>

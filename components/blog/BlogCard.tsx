@@ -24,7 +24,7 @@ export function BlogCard({ post, locale }: BlogCardProps) {
         </div>
       )}
       <div className="p-4 flex flex-col gap-3">
-        <h3 className="text-lg font-semibold leading-snug line-clamp-2 group-hover:text-orange-100 transition">
+        <h3 className="text-lg font-semibold leading-snug line-clamp-2 group-hover:text-black dark:group-hover:text-white transition">
           {post.title}
         </h3>
         {post.excerpt && (
@@ -41,7 +41,7 @@ export function BlogCard({ post, locale }: BlogCardProps) {
           {post.tags.slice(0, 2).map((tag) => (
             <span
               key={tag}
-              className="inline-flex items-center text-xs px-2 py-1 bg-orange-100 dark:bg-orange-600/20 text-orange-400 dark:text-orange-400 rounded-full whitespace-nowrap"
+              className="inline-flex items-center text-xs px-2 py-1 bg-transparent border border-black dark:border-white text-black dark:text-white rounded-full whitespace-nowrap"
             >
               {tag}
             </span>

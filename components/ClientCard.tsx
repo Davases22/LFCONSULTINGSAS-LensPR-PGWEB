@@ -119,7 +119,7 @@ export default function ClientCard({ item, text }: { item: any; text: string }) 
                     <a
                       key={news.id}
                       href={`/${locale}/sections/press`}
-                      className="bg-gray-50 dark:bg-zinc-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-zinc-700 hover:shadow-md hover:border-orange-300 dark:hover:border-orange-500 transition-all duration-200 cursor-pointer transform hover:scale-[1.02]"
+                      className="bg-gray-50 dark:bg-zinc-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-zinc-700 hover:shadow-md hover:border-black dark:hover:border-white transition-all duration-200 cursor-pointer transform hover:scale-[1.02]"
                     >
                       {news.mediaUrl && (
                         <div className="w-full h-48 mb-4 overflow-hidden rounded-lg bg-white">
@@ -130,7 +130,7 @@ export default function ClientCard({ item, text }: { item: any; text: string }) 
                           />
                         </div>
                       )}
-                      <h4 className="font-semibold text-lg mb-3 text-gray-800 dark:text-gray-200 line-clamp-2 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
+                      <h4 className="font-semibold text-lg mb-3 text-gray-800 dark:text-gray-200 line-clamp-2 hover:text-black dark:hover:text-white transition-colors">
                         {news.title}
                       </h4>
                       <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 line-clamp-3">

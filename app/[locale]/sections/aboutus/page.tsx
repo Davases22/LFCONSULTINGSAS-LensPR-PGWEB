@@ -46,7 +46,7 @@ export default function AboutUsSection() {
               <div className="flex items-center gap-4 mt-3">
                 <a
                   href="mailto:laura@lenspr.com"
-                  className="text-black dark:text-white hover:text-orange-400 dark:hover:text-orange-400 transition"
+                  className="text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition"
                   aria-label="Enviar email a Laura"
                 >
                   <Mail className="w-6 h-6" />
@@ -55,7 +55,7 @@ export default function AboutUsSection() {
                   href="https://www.linkedin.com/in/lauramarcelaforero/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black dark:text-white hover:text-orange-400 dark:hover:text-orange-400 transition"
+                  className="text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition"
                   aria-label="Visitar perfil de LinkedIn de Laura"
                 >
                   <Linkedin className="w-6 h-6" />
@@ -101,14 +101,14 @@ export default function AboutUsSection() {
                 href="https://calendly.com/laura-lenspr/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-3 bg-black text-white dark:bg-orange-300 dark:text-black hover:bg-orange-400 hover:text-white dark:hover:bg-orange-400 px-6 py-4 rounded-full text-base font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+                className="group inline-flex items-center justify-center gap-3 bg-transparent border border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-6 py-4 rounded-full text-base font-medium transition-all duration-300 hover:scale-105 hover:-translate-y-1"
               >
                 <Calendar className="w-5 h-5" />
                 <span>{t("scheduleCta")}</span>
               </a>
               <Link
                 href={`/${locale}/sections/contact?topic=speaker`}
-                className="group inline-flex items-center justify-center gap-3 bg-white text-black dark:bg-zinc-800 dark:text-white border-2 border-black dark:border-orange-300 hover:bg-orange-400 hover:text-white hover:border-orange-400 dark:hover:bg-orange-400 dark:hover:text-black px-6 py-4 rounded-full text-base font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+                className="group inline-flex items-center justify-center gap-3 bg-transparent text-black dark:text-white border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-6 py-4 rounded-full text-base font-medium transition-all duration-300 hover:scale-105 hover:-translate-y-1"
               >
                 <Mic className="w-5 h-5" />
                 <span>{t("speakerCta")}</span>

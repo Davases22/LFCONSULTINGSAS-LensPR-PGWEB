@@ -21,7 +21,7 @@ export default function Paragraph() {
           <Link
             href="https://calendly.com/lauraforerolenspr"
             target="_blank"
-            className="bg-orange-300 dark:bg-orange-400 text-zinc-900 shadow-lg dark:text-zinc-900 text-lg py-4 px-8 rounded-full hover:bg-zinc-900 hover:text-white transition-colors flex items-center space-x-2 mx-auto"
+            className="bg-transparent border border-black text-black dark:border-white dark:text-white text-lg py-4 px-8 rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors flex items-center space-x-2 mx-auto"
           >
             <Calendar className="w-6 h-6" />
             <span>{t("letsConnect")}</span>

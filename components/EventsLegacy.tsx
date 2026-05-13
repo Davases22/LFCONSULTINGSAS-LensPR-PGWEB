@@ -162,7 +162,7 @@ const EventsLegacy = () => {
             key={month.value}
             onClick={() => setMonthFilter(month.value)}
             className={`px-3 py-2 rounded-full text-m font-medium shadow-md shadow-gray-400 ${monthFilter === month.value
-              ? 'bg-orange-300 text-black scale-125 transition-all -translate-y-2 shadow-xl shadow-gray-700'
+              ? 'bg-black text-white scale-125 transition-all -translate-y-2 shadow-xl shadow-gray-700'
               : 'bg-gray-200 text-black hover:bg-gray-400 hover:scale-110 transition-all'
               }`}
           >
@@ -209,7 +209,7 @@ const EventsLegacy = () => {
             {/* Botón para quitar filtros */}
             <button
               onClick={clearFilters}
-              className=" bg-orange-300 border-l-orange-500 text-black rounded-full px-4 py-2 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="bg-transparent border border-black text-black rounded-full px-4 py-2 hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-black"
             >
               {t('Filters.Clear')}
             </button>
@@ -264,14 +264,14 @@ const EventsLegacy = () => {
                       <td className="py-3 px-4 text-center">
                         <button
                           onClick={() => window.open(event['Enlace'], '_blank')}
-                          className="border !border-orange-300 shadow-sm hover:bg-orange-300 text-black text-lg py-2 px-4 rounded-lg  transform transition-all duration-300 ease-in-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
+                          className="bg-transparent border border-black text-black hover:bg-black hover:text-white text-lg py-2 px-4 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl"
                         >
                           {t('Table.Button')}
                         </button>
                       </td>
                       <td className="py-3 px-4 text-center">
                       {event['Precio'] === 'Gratis' && (
-                            <span className="relative text-orange-400 text-xl ">
+                            <span className="relative text-black text-xl ">
                               {t('Filters.Free')}
                             </span>
                           )}
@@ -301,7 +301,7 @@ const EventsLegacy = () => {
                       />
                     </div>
 
-                    <div className='bg-orange-300 text-black text-lg rounded-full px-4 py-2 shadow-lg shadow-gray-400 mt-4 mb-4 items-center justify-center flex'>
+                    <div className='bg-transparent border border-black text-black text-lg rounded-full px-4 py-2 mt-4 mb-4 items-center justify-center flex'>
                       <a
                         href={event['Enlace']}
                         target="_blank"

@@ -29,15 +29,15 @@ export default function LoudSection() {
           </div>
         </div>
 
-        <div className="bg-orange-400 rounded-xl flex flex-col items-start text-left relative overflow-hidden aspect-[2/1.4] max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full">
+        <div className="bg-transparent border border-black dark:border-white rounded-xl flex flex-col items-start text-left relative overflow-hidden aspect-[2/1.4] max-w-sm md:max-w-md lg:max-w-lg mx-auto w-full">
           <div className="relative z-10 p-6 md:p-6 lg:p-8 h-full flex flex-col space-y-3 md:space-y-4 lg:space-y-5">
             <div className="pt-2">
-              <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-4xl leading-tight text-black">
+              <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-4xl leading-tight text-black dark:text-white">
                 {t("corporateEvents.title")}
               </h3>
             </div>
             <div className="flex-1 flex items-center pb-3">
-              <p className="text-gray-800 text-sm md:text-sm lg:text-base leading-relaxed">
+              <p className="text-gray-800 dark:text-gray-300 text-sm md:text-sm lg:text-base leading-relaxed">
                 {t("corporateEvents.description")}
               </p>
             </div>

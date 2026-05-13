@@ -40,7 +40,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
     const hasSidebarContent = hasRelatedPosts || (post.tags && post.tags.length > 0);
 
     return (
-      <main className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-orange-50/30 dark:from-zinc-950 dark:via-zinc-900 dark:to-orange-950/10">
+      <main className="min-h-screen bg-white dark:bg-zinc-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
           <div className={`grid gap-8 lg:gap-12 ${hasSidebarContent ? 'lg:grid-cols-12' : ''}`}>
             <article className={hasSidebarContent ? 'lg:col-span-8' : 'max-w-4xl mx-auto w-full'}>
@@ -75,14 +75,14 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                   {/* Categoría y tags */}
                   <div className="flex flex-wrap gap-2">
                     {post.category && (
-                      <span className="px-3 py-1.5 bg-orange-400 text-white text-xs font-semibold rounded-full shadow-sm">
+                      <span className="px-3 py-1.5 bg-transparent border border-black dark:border-white text-black dark:text-white text-xs font-semibold rounded-full">
                         {post.category}
                       </span>
                     )}
                     {post.tags.slice(0, 3).map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1.5 bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-300 text-xs rounded-full hover:bg-orange-100 dark:hover:bg-orange-900/30 transition-colors"
+                        className="px-3 py-1.5 bg-transparent border border-black dark:border-white text-black dark:text-white text-xs rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
                       >
                         {tag}
                       </span>
@@ -104,7 +104,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
 
                 {/* Excerpt si existe */}
                 {post.excerpt && (
-                  <div className="mb-6 p-6 bg-orange-50 dark:bg-orange-950/20 border-l-4 border-orange-400 rounded-r-xl">
+                  <div className="mb-6 p-6 bg-transparent border-l-4 border-black dark:border-white rounded-r-xl">
                     <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed italic">
                       {post.excerpt}
                     </p>
@@ -134,15 +134,15 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                     prose-p:text-base prose-p:sm:text-lg prose-p:lg:text-xl prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6
                     prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-strong:font-bold
                     prose-em:text-gray-800 dark:prose-em:text-gray-200
-                    prose-a:text-orange-500 dark:prose-a:text-orange-400 prose-a:font-medium prose-a:underline
-                    prose-a:decoration-orange-300 dark:prose-a:decoration-orange-600 prose-a:underline-offset-2
+                    prose-a:text-black dark:prose-a:text-white prose-a:font-medium prose-a:underline
+                    prose-a:decoration-black dark:prose-a:decoration-white prose-a:underline-offset-2
                     hover:prose-a:decoration-2 prose-a:transition-all
-                    prose-blockquote:border-l-4 prose-blockquote:border-orange-400 prose-blockquote:bg-orange-50/50
-                    dark:prose-blockquote:bg-orange-950/20 prose-blockquote:p-6 prose-blockquote:rounded-r-xl
+                    prose-blockquote:border-l-4 prose-blockquote:border-black dark:prose-blockquote:border-white prose-blockquote:bg-transparent
+                    prose-blockquote:p-6 prose-blockquote:rounded-r-xl
                     prose-blockquote:my-8 prose-blockquote:not-italic prose-blockquote:text-gray-800
                     dark:prose-blockquote:text-gray-200 prose-blockquote:text-lg
                     prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-2 prose-code:py-1
-                    prose-code:rounded prose-code:text-sm prose-code:font-mono prose-code:text-orange-600 dark:prose-code:text-orange-400
+                    prose-code:rounded prose-code:text-sm prose-code:font-mono prose-code:text-black dark:prose-code:text-white
                     prose-code:before:content-none prose-code:after:content-none
                     prose-pre:bg-gray-900 dark:prose-pre:bg-black prose-pre:border prose-pre:border-gray-300
                     dark:prose-pre:border-gray-700 prose-pre:rounded-xl prose-pre:shadow-2xl prose-pre:my-8
@@ -155,7 +155,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                     [&_img]:max-w-full [&_img]:h-auto [&_img]:border [&_img]:border-gray-200 dark:[&_img]:border-zinc-700
                     [&_img]:transition-transform [&_img]:duration-300 [&_img:hover]:scale-[1.01]
                     [&_table]:my-8 [&_table]:border-collapse [&_table]:rounded-xl [&_table]:overflow-hidden [&_table]:shadow-xl [&_table]:w-full
-                    [&_th]:bg-orange-500 [&_th]:text-white [&_th]:font-bold [&_th]:p-4 [&_th]:text-left
+                    [&_th]:bg-black [&_th]:text-white [&_th]:font-bold [&_th]:p-4 [&_th]:text-left
                     [&_td]:p-4 [&_td]:border-b [&_td]:border-gray-200 dark:[&_td]:border-gray-700 [&_td]:text-gray-700 dark:[&_td]:text-gray-300
                     [&_tr:last-child_td]:border-b-0
                     [&_hr]:my-12 [&_hr]:border-gray-300 dark:[&_hr]:border-zinc-700"
@@ -188,7 +188,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                         {post.tags.map((tag) => (
                           <span
                             key={tag}
-                            className="px-3 py-1 bg-orange-100 dark:bg-orange-900/50 text-orange-400 dark:text-orange-400 text-sm rounded-full hover:bg-orange-200 dark:hover:bg-orange-900/70 transition-colors"
+                            className="px-3 py-1 bg-transparent border border-black dark:border-white text-black dark:text-white text-sm rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
                           >
                             {tag}
                           </span>

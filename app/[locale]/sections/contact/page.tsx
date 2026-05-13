@@ -59,7 +59,7 @@ export default function ContactSection() {
             href="https://calendly.com/laura-lenspr/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-orange-300 dark:bg-orange-400 text-zinc-900 hover:bg-zinc-900 hover:text-white px-8 py-4 rounded-full text-base font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+            className="inline-flex items-center gap-3 bg-transparent border border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-8 py-4 rounded-full text-base font-medium transition-all duration-300 hover:scale-105 hover:-translate-y-1"
           >
             <Calendar className="w-5 h-5" />
             <span>{t("scheduleCallButton")}</span>
@@ -103,7 +103,7 @@ export default function ContactSection() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full border border-gray-300 dark:border-zinc-700 rounded py-2 px-4 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base"
+                  className="w-full border border-gray-300 dark:border-zinc-700 rounded py-2 px-4 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white text-base"
                   placeholder={t("namePlaceholder")}
                   required
                   disabled={isLoading}
@@ -119,7 +119,7 @@ export default function ContactSection() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full py-2 px-4 border border-gray-300 dark:border-zinc-700 rounded bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base"
+                  className="w-full py-2 px-4 border border-gray-300 dark:border-zinc-700 rounded bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white text-base"
                   placeholder={t("emailPlaceholder")}
                   required
                   disabled={isLoading}
@@ -135,7 +135,7 @@ export default function ContactSection() {
                   id="message"
                   rows={5}
                   name="message"
-                  className="w-full border py-2 px-4 border-gray-300 dark:border-zinc-700 rounded bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-400 text-base"
+                  className="w-full border py-2 px-4 border-gray-300 dark:border-zinc-700 rounded bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white text-base"
                   placeholder={t("messagePlaceholder")}
                   required
                   disabled={isLoading}
@@ -149,7 +149,7 @@ export default function ContactSection() {
                 className={`text-base font-semibold py-2 px-6 rounded transition-colors ${
                   isLoading 
                     ? 'bg-gray-400 text-gray-600 cursor-not-allowed' 
-                    : 'bg-black dark:bg-white dark:text-black text-white hover:bg-orange-400 hover:text-black'
+                    : 'bg-transparent border border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black'
                 }`}
               >
                 {isLoading ? t("sendingButton") : t("sendButton")}
@@ -169,19 +169,19 @@ export default function ContactSection() {
             {/* Información de contacto con íconos */}
             <div className="space-y-4 text-gray-700 dark:text-gray-300 mb-8 text-lg">
               <div className="flex items-center gap-3">
-                <MapPin className="w-6 h-6 text-orange-400" />
+                <MapPin className="w-6 h-6 text-black dark:text-white" />
                 <p>
                   <strong>{t("addressLabel")}:</strong> {t("addressValue")}
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <PhoneCall className="w-6 h-6 text-orange-400" />
+                <PhoneCall className="w-6 h-6 text-black dark:text-white" />
                 <p>
                   <strong>{t("phoneLabel")}:</strong> {t("phoneValue")}
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-6 h-6 text-orange-400" />
+                <Mail className="w-6 h-6 text-black dark:text-white" />
                 <p>
                   <strong>{t("emailLabel")}:</strong> {t("emailValue")}
                 </p>

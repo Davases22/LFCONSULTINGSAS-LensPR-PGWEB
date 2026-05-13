@@ -23,25 +23,25 @@ export default function Footer({ locale }: { locale: string }) {
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
               <Link
                 href={`/${locale}/sections/aboutus`}
-                className="hover:text-orange-400 text-base transition-colors"
+                className="hover:text-black dark:hover:text-white text-base transition-colors"
               >
                 {t("about")}
               </Link>
               <Link
                 href={`/${locale}/sections/services`}
-                className="hover:text-orange-400 text-base transition-colors"
+                className="hover:text-black dark:hover:text-white text-base transition-colors"
               >
                 {t("services")}
               </Link>
               <Link
                 href={`/${locale}/sections/contact`}
-                className="hover:text-orange-400 text-base transition-colors"
+                className="hover:text-black dark:hover:text-white text-base transition-colors"
               >
                 {t("contact")}
               </Link>
               <Link
                 href={`/${locale}/sections/press`}
-                className="hover:text-orange-400 text-base transition-colors"
+                className="hover:text-black dark:hover:text-white text-base transition-colors"
               >
                 {t("blog")}
               </Link>
@@ -64,7 +64,7 @@ export default function Footer({ locale }: { locale: string }) {
                 href="https://www.linkedin.com/company/lenspr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-base rounded-full border border-gray-400 dark:border-gray-600 hover:bg-orange-400 transition-colors"
+                className="p-2 text-base rounded-full border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
               >
                 <FaLinkedinIn />
               </a>
@@ -72,7 +72,7 @@ export default function Footer({ locale }: { locale: string }) {
                 href="https://www.instagram.com/lensprlatam/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-base rounded-full border border-gray-400 dark:border-gray-600 hover:bg-orange-400 transition-colors"
+                className="p-2 text-base rounded-full border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors"
               >
                 <FaInstagram />
               </a>

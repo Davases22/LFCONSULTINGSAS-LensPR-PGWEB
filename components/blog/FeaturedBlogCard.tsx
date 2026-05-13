@@ -32,7 +32,7 @@ export function FeaturedBlogCard({ post, locale }: FeaturedBlogCardProps) {
           </p>
         )}
         {post.category && (
-          <span className="text-xs md:text-sm inline-flex items-center self-start bg-orange-400/80 backdrop-blur px-3 py-1 rounded-full mt-3 whitespace-nowrap">
+          <span className="text-xs md:text-sm inline-flex items-center self-start bg-transparent border border-white text-white backdrop-blur px-3 py-1 rounded-full mt-3 whitespace-nowrap">
             {post.category}
           </span>
         )}
