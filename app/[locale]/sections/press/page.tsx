@@ -14,7 +14,7 @@ export default async function PressPage({
 
   return (
     <section className="bg-white dark:bg-zinc-900 py-12">
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20">
+      <div className="px-4 sm:px-8">
         <h1 className="text-4xl font-bold mb-8 text-center text-black dark:text-white">
           {t("title")}
         </h1>

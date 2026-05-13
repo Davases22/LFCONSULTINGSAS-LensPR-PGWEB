@@ -108,7 +108,7 @@ export default function ServicesSection() {
           </p>
           <a
             href="#"
-            className="inline-block mt-6 text-sm font-semibold text-black dark:text-white hover:text-orange-400 transition-colors"
+            className="inline-block mt-6 text-sm font-semibold text-black dark:text-white hover:underline underline-offset-4 transition-colors"
           >
             {tDetails(`${activeFilter}.ctaText`)}
           </a>

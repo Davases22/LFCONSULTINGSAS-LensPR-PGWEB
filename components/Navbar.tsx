@@ -56,7 +56,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
           : "py-6 md:py-8"
       }`}
     >
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20 flex items-center gap-6">
+      <div className="px-4 sm:px-8 flex items-center gap-6">
       <div className="flex-1 flex items-center">
       <Link href={`/${currentLanguage}`}>
         <img
@@ -117,16 +117,6 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
             className="whitespace-nowrap text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
           >
             {t("press")}
-          </Link>
-        </li>
-
-        {/* EVENTOS */}
-        <li>
-          <Link
-            href={`/${currentLanguage}/sections/events`}
-            className="whitespace-nowrap text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-          >
-            {t("events")}
           </Link>
         </li>
 
@@ -218,7 +208,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
 
         <button
           onClick={() => router.push(`/${currentLanguage}/sections/contact`)}
-          className="text-white text-md shadow-lg  bg-black dark:bg-orange-300 dark:text-gray-700 hover:bg-black hover:text-white px-8 py-4 rounded-full transition hover:scale-110 hover:-translate-y-1"
+          className="bg-transparent border border-black text-black dark:border-white dark:text-white text-md hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-8 py-4 rounded-full transition hover:scale-110 hover:-translate-y-1"
         >
           {t("contact")}
         </button>
@@ -288,16 +278,6 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("press")}
-              </Link>
-            </li>
-            {/* Eventos */}
-            <li>
-              <Link
-                href={`/${currentLanguage}/sections/events`}
-                className="block text-gray-700 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t("events")}
               </Link>
             </li>
             {/* Países */}
@@ -376,7 +356,7 @@ export default function Navbar({ showBlog = true }: { showBlog?: boolean }) {
                   router.push(`/${currentLanguage}/sections/contact`);
                   setIsMobileMenuOpen(false);
                 }}
-                className="w-full text-white bg-black dark:bg-white dark:text-black hover:bg-orange-400 px-4 py-2 rounded transition hover:scale-105 hover:-translate-y-1"
+                className="w-full bg-transparent border border-black text-black dark:border-white dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-4 py-2 rounded transition hover:scale-105 hover:-translate-y-1"
               >
                 {t("contact")}
               </button>

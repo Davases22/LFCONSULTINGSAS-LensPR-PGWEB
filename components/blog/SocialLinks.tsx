@@ -97,7 +97,7 @@ export function SocialLinks({ socialLinks }: SocialLinksProps) {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-full bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-gray-400 hover:bg-orange-400 hover:text-white transition-all duration-200 hover:scale-110"
+            className="p-2 rounded-full bg-transparent border border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200 hover:scale-110"
             title={link.label || `Visitar ${link.platform}`}
           >
             {getSocialIcon(link.platform, link.icon_url)}

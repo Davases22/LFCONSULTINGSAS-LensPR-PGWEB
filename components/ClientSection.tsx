@@ -39,7 +39,7 @@ const secundariosILogos = [
 
 function Capsule({ label }: { label: string }) {
     return (
-        <div className="px-4 py-2 bg-orange-50 text-orange-800 border border-orange-800 text-sm rounded-full shadow-sm hover:bg-orange-200 transition">
+        <div className="px-4 py-2 bg-transparent text-black border border-black text-sm rounded-full hover:bg-black hover:text-white transition">
             {label}
         </div>
     );

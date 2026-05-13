@@ -93,7 +93,7 @@ const CredibilityStats = () => {
                 <p className="text-gray-500 text-sm mr-6">{stat.description}</p>
                 <Link
                   href={stat.href}
-                  className="group mt-auto pt-3 inline-flex items-center gap-1 text-sm font-medium text-black hover:text-orange-500 dark:text-white dark:hover:text-orange-300 transition-colors duration-200 self-start"
+                  className="group mt-auto pt-3 inline-flex items-center gap-1 text-sm font-medium text-black hover:text-gray-500 dark:text-white dark:hover:text-gray-400 transition-colors duration-200 self-start"
                 >
                   <span className="underline-offset-4 group-hover:underline">
                     {stat.cta}
