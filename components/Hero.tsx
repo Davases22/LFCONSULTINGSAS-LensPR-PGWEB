@@ -5,42 +5,17 @@ import React from "react";
 interface HeroProps {
   title: string;
   subtitle: string;
-  buttonLabel: string;
-  videoUrl: string; // Ruta del video
-  onButtonClick?: () => void;
 }
 
-const Hero: React.FC<HeroProps> = ({
-  title,
-  subtitle,
-  buttonLabel,
-  videoUrl,
-  onButtonClick,
-}) => {
+const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
   return (
-    <section className="relative w-full min-h-[45vh] flex items-center justify-center overflow-hidden">
-      {/* Video de fondo */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        src={videoUrl}
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
-
-      {/* Capa oscura para mejorar legibilidad del texto */}
-      <div className="absolute inset-0 bg-black/30" />
-
-      {/* Contenido principal */}
-      <div className="relative z-10 text-center text-white max-w-full px-4 py-16 md:py-24">
-        <h1 className="text-3xl md:text-4xl lg:text-7xl font-semibold mb-4 md:mb-6">
-          {title}
-        </h1>
-        <p className="text-lg md:text-2xl text-gray-200 mb-6">
-          {subtitle}
-        </p>
-      </div>
+    <section className="w-full flex flex-col items-center justify-center text-center px-4 sm:px-8 py-12 md:py-20 bg-white dark:bg-zinc-900 transition-colors duration-300">
+      <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold mb-4 md:mb-6 text-black dark:text-white">
+        {title}
+      </h1>
+      <p className="text-lg md:text-2xl text-black/70 dark:text-white/70">
+        {subtitle}
+      </p>
     </section>
   );
 };
