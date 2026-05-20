@@ -220,7 +220,7 @@ export const clientsData: ClientsData = {
       id: "health-wellness",
       name: "Salud y Bienestar",
       clients: [
-        { id: "mitho", name: "Mitho", category: "health-wellness", website: "https://mitho.io" }
+        { id: "mitho", name: "Mitho Wellness Club", category: "health-wellness", website: "https://mitho.io" }
       ]
     }
   ]
