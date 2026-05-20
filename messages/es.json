@@ -340,6 +340,7 @@
     "web3Crypto": "Web3 / Cripto / Blockchain",
     "saas": "SaaS",
     "proptechContech": "PropTech & ConTech",
+    "realEstate": "Inmobiliarias",
     "accelerators": "Aceleradoras / Hubs",
     "marketplaces": "Marketplaces",
     "agriFoodtech": "Agri & FoodTech",
@@ -353,7 +354,7 @@
     "institutions": "Instituciones, Ecosistema y Gobierno",
     "personalBrand": "Personal Brand",
     "agencies": "Agencias",
-    "saludRestaurantes": "Salud y Restaurantes"
+    "healthWellness": "Salud y Bienestar"
   },
   "countriesPage": {
     "title": "Países & Ciudades",

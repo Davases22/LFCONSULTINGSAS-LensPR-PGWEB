@@ -91,8 +91,14 @@ export const clientsData: ClientsData = {
       name: "PropTech & ConTech",
       clients: [
         { id: "properix", name: "Properix", category: "proptech-contech", website: "https://properix.com" },
-        { id: "retri", name: "Retri", category: "proptech-contech", website: "https://retri.co" },
-        { id: "dils", name: "Dils (Lucas Fox)", category: "proptech-contech", website: "https://dils.com" }
+        { id: "retri", name: "Retri", category: "proptech-contech", website: "https://retri.co" }
+      ]
+    },
+    {
+      id: "real-estate",
+      name: "Inmobiliarias",
+      clients: [
+        { id: "dils", name: "Dils / Lucas Fox", category: "real-estate", website: "https://dils.com" }
       ]
     },
     {
@@ -102,7 +108,8 @@ export const clientsData: ClientsData = {
         { id: "dapta", name: "Dapta", category: "ai-automation", website: "https://dapta.com" },
         { id: "patagon-ai", name: "Patagon AI", category: "ai-automation", website: "https://patagon.ai" },
         { id: "provectus", name: "Provectus", category: "ai-automation", website: "https://provectus.com" },
-        { id: "treble-ai", name: "treble.ai", category: "ai-automation", website: "https://treble.ai" }
+        { id: "treble-ai", name: "treble.ai", category: "ai-automation", website: "https://treble.ai" },
+        { id: "dondo", name: "DONDO", category: "ai-automation", website: "https://dondo.com" }
       ]
     },
     {
@@ -123,7 +130,8 @@ export const clientsData: ClientsData = {
         { id: "codiversity", name: "Codiversity", category: "edtech", website: "https://codiversity.com" },
         { id: "universidad-ean", name: "Universidad EAN", category: "edtech", website: "https://universidadean.edu.co" },
         { id: "learninc", name: "Learninc", category: "edtech", website: "https://learninc.com" },
-        { id: "quix", name: "Quix", category: "edtech", website: "https://quix.ai" }
+        { id: "quix", name: "Quix", category: "edtech", website: "https://quix.ai" },
+        { id: "open-english", name: "Open English", category: "edtech", website: "https://www.openenglish.com" }
       ]
     },
     {
@@ -177,6 +185,7 @@ export const clientsData: ClientsData = {
       name: "Instituciones, Ecosistema y Gobierno",
       clients: [
         { id: "colombia-tech-week", name: "Colombia Tech Week", category: "institutions", website: "https://colombiatechweek.co" },
+        { id: "venezuela-tech-week", name: "Venezuela Tech Week", category: "institutions" },
         { id: "ccb", name: "Cámara de Comercio de Bogotá", category: "institutions", website: "https://www.ccb.org.co" },
         { id: "cc-tunja", name: "Cámara de Comercio de Tunja", category: "institutions", website: "https://www.cctunja.org.co" }
       ]
@@ -208,11 +217,10 @@ export const clientsData: ClientsData = {
       ]
     },
     {
-      id: "salud-restaurantes",
-      name: "Salud y Restaurantes",
+      id: "health-wellness",
+      name: "Salud y Bienestar",
       clients: [
-        { id: "mitho", name: "Mitho", category: "salud-restaurantes", website: "https://mitho.io" },
-        { id: "dondo", name: "DONDO", category: "salud-restaurantes", website: "https://dondo.com" }
+        { id: "mitho", name: "Mitho", category: "health-wellness", website: "https://mitho.io" }
       ]
     }
   ]
