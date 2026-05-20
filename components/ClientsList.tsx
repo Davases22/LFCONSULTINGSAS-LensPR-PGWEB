@@ -16,6 +16,7 @@ const categoryKeyMap: Record<string, string> = {
   "web3-crypto": "web3Crypto",
   "saas": "saas",
   "proptech-contech": "proptechContech",
+  "real-estate": "realEstate",
   "marketplaces": "marketplaces",
   "agri-foodtech": "agriFoodtech",
   "healthtech-pettech": "healthtechPettech",
@@ -28,7 +29,7 @@ const categoryKeyMap: Record<string, string> = {
   "institutions": "institutions",
   "personal-brand": "personalBrand",
   "agencies": "agencies",
-  "salud-restaurantes": "saludRestaurantes"
+  "health-wellness": "healthWellness"
 };
 
 export default function ClientsList({ categories }: ClientsListProps) {
