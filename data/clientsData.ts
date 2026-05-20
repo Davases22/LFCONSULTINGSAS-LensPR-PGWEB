@@ -37,7 +37,23 @@ export const clientsData: ClientsData = {
         { id: "eatable-adventures", name: "Eatable Adventures", category: "venture-capital", website: "https://www.eatableadventures.com" },
         { id: "suricata-labs", name: "Suricata Labs", category: "venture-capital", website: "https://suricatalabs.com" },
         { id: "socialab", name: "Socialab", category: "venture-capital", website: "https://socialab.com" },
-        { id: "pantera-makers", name: "Pantera Makers", category: "venture-capital", website: "https://panteramakers.com" }
+        { id: "pantera-makers", name: "Pantera Makers", category: "venture-capital", website: "https://panteramakers.com" },
+        { id: "aceleradora-401", name: "401 Aceleradora", category: "venture-capital" }
+      ]
+    },
+    {
+      id: "proptech-contech",
+      name: "PropTech & ConTech",
+      clients: [
+        { id: "properix", name: "Properix", category: "proptech-contech", website: "https://properix.com" },
+        { id: "retri", name: "Retri", category: "proptech-contech", website: "https://retri.co" }
+      ]
+    },
+    {
+      id: "real-estate",
+      name: "Inmobiliarias",
+      clients: [
+        { id: "dils", name: "Dils / Lucas Fox", category: "real-estate", website: "https://dils.com" }
       ]
     },
     {
@@ -59,7 +75,7 @@ export const clientsData: ClientsData = {
         { id: "zulu", name: "Zulu", category: "fintech", website: "https://zulu.co" },
         { id: "bunker", name: "Bunker", category: "fintech", website: "https://bunker.com" },
         { id: "morado", name: "Morado", category: "fintech", website: "https://moradoapp.com" },
-        { id: "finup", name: "FinUp", category: "fintech", website: "https://finup.com.ar" }
+        { id: "finup", name: "FinUP Colombia", category: "fintech", website: "https://finup.com.ar" }
       ]
     },
     {
@@ -84,21 +100,6 @@ export const clientsData: ClientsData = {
         { id: "sytrex", name: "Sytrex", category: "saas", website: "https://sytrex.com" },
         { id: "lizit", name: "Lizit", category: "saas", website: "https://lizit.co" },
         { id: "encuadrado", name: "Encuadrado", category: "saas", website: "https://encuadrado.com" }
-      ]
-    },
-    {
-      id: "proptech-contech",
-      name: "PropTech & ConTech",
-      clients: [
-        { id: "properix", name: "Properix", category: "proptech-contech", website: "https://properix.com" },
-        { id: "retri", name: "Retri", category: "proptech-contech", website: "https://retri.co" }
-      ]
-    },
-    {
-      id: "real-estate",
-      name: "Inmobiliarias",
-      clients: [
-        { id: "dils", name: "Dils / Lucas Fox", category: "real-estate", website: "https://dils.com" }
       ]
     },
     {
@@ -173,11 +174,17 @@ export const clientsData: ClientsData = {
       ]
     },
     {
-      id: "marketplaces",
-      name: "Marketplaces & Movilidad",
+      id: "gaming",
+      name: "Gaming",
       clients: [
-        { id: "snauu", name: "Snauu", category: "marketplaces", website: "https://snauu.com" },
-        { id: "ridery", name: "Ridery", category: "marketplaces", website: "https://ridery.app" }
+        { id: "snauu", name: "Snauu", category: "gaming", website: "https://snauu.com" }
+      ]
+    },
+    {
+      id: "mobility-tech",
+      name: "Mobility Tech",
+      clients: [
+        { id: "ridery", name: "Ridery", category: "mobility-tech", website: "https://ridery.app" }
       ]
     },
     {
@@ -185,6 +192,7 @@ export const clientsData: ClientsData = {
       name: "Instituciones, Ecosistema y Gobierno",
       clients: [
         { id: "colombia-tech-week", name: "Colombia Tech Week", category: "institutions", website: "https://colombiatechweek.co" },
+        { id: "ai-summit", name: "AI Summit", category: "institutions" },
         { id: "venezuela-tech-week", name: "Venezuela Tech Week", category: "institutions" },
         { id: "ccb", name: "Cámara de Comercio de Bogotá", category: "institutions", website: "https://www.ccb.org.co" },
         { id: "cc-tunja", name: "Cámara de Comercio de Tunja", category: "institutions", website: "https://www.cctunja.org.co" }
@@ -202,25 +210,22 @@ export const clientsData: ClientsData = {
       name: "Personal Brand & Comunidades",
       clients: [
         { id: "paula-ferrada", name: "Paula Ferrada", category: "personal-brand" },
-        { id: "laura-forero", name: "Laura Forero", category: "personal-brand" },
-        { id: "puras-duras", name: "Puras Duras", category: "personal-brand" }
+        { id: "laura-forero", name: "Laura Forero", category: "personal-brand" }
       ]
     },
     {
       id: "agencies",
-      name: "Agencias, Eventos y Lifestyle",
+      name: "Agencias y Producción",
       clients: [
         { id: "masproducciones", name: "masproducciones.co", category: "agencies", website: "https://masproducciones.co" },
-        { id: "aceleradora-401", name: "401 Aceleradora", category: "agencies" },
-        { id: "circuito-floral-cartagena", name: "Circuito Floral Cartagena", category: "agencies" },
-        { id: "ceramica-y-vino", name: "Cerámica y Vino", category: "agencies" }
+        { id: "circuito-floral-cartagena", name: "Circuito Floral Cartagena by E-Club & CC Serrezuela", category: "agencies" }
       ]
     },
     {
       id: "health-wellness",
       name: "Salud y Bienestar",
       clients: [
-        { id: "mitho", name: "Mitho", category: "health-wellness", website: "https://mitho.io" }
+        { id: "mitho", name: "Mitho Wellness Club", category: "health-wellness", website: "https://mitho.io" }
       ]
     }
   ]
