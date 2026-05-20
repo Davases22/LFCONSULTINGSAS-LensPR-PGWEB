@@ -173,11 +173,17 @@ export const clientsData: ClientsData = {
       ]
     },
     {
-      id: "marketplaces",
-      name: "Marketplaces & Movilidad",
+      id: "gaming",
+      name: "Gaming",
       clients: [
-        { id: "snauu", name: "Snauu", category: "marketplaces", website: "https://snauu.com" },
-        { id: "ridery", name: "Ridery", category: "marketplaces", website: "https://ridery.app" }
+        { id: "snauu", name: "Snauu", category: "gaming", website: "https://snauu.com" }
+      ]
+    },
+    {
+      id: "mobility-tech",
+      name: "Mobility Tech",
+      clients: [
+        { id: "ridery", name: "Ridery", category: "mobility-tech", website: "https://ridery.app" }
       ]
     },
     {
