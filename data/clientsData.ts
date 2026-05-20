@@ -59,7 +59,7 @@ export const clientsData: ClientsData = {
         { id: "zulu", name: "Zulu", category: "fintech", website: "https://zulu.co" },
         { id: "bunker", name: "Bunker", category: "fintech", website: "https://bunker.com" },
         { id: "morado", name: "Morado", category: "fintech", website: "https://moradoapp.com" },
-        { id: "finup", name: "FinUp", category: "fintech", website: "https://finup.com.ar" }
+        { id: "finup", name: "FinUP Colombia", category: "fintech", website: "https://finup.com.ar" }
       ]
     },
     {
