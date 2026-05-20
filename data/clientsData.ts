@@ -41,6 +41,21 @@ export const clientsData: ClientsData = {
       ]
     },
     {
+      id: "proptech-contech",
+      name: "PropTech & ConTech",
+      clients: [
+        { id: "properix", name: "Properix", category: "proptech-contech", website: "https://properix.com" },
+        { id: "retri", name: "Retri", category: "proptech-contech", website: "https://retri.co" }
+      ]
+    },
+    {
+      id: "real-estate",
+      name: "Inmobiliarias",
+      clients: [
+        { id: "dils", name: "Dils / Lucas Fox", category: "real-estate", website: "https://dils.com" }
+      ]
+    },
+    {
       id: "fintech",
       name: "Fintech (pagos, crédito, inversión, payroll)",
       clients: [
@@ -84,21 +99,6 @@ export const clientsData: ClientsData = {
         { id: "sytrex", name: "Sytrex", category: "saas", website: "https://sytrex.com" },
         { id: "lizit", name: "Lizit", category: "saas", website: "https://lizit.co" },
         { id: "encuadrado", name: "Encuadrado", category: "saas", website: "https://encuadrado.com" }
-      ]
-    },
-    {
-      id: "proptech-contech",
-      name: "PropTech & ConTech",
-      clients: [
-        { id: "properix", name: "Properix", category: "proptech-contech", website: "https://properix.com" },
-        { id: "retri", name: "Retri", category: "proptech-contech", website: "https://retri.co" }
-      ]
-    },
-    {
-      id: "real-estate",
-      name: "Inmobiliarias",
-      clients: [
-        { id: "dils", name: "Dils / Lucas Fox", category: "real-estate", website: "https://dils.com" }
       ]
     },
     {
