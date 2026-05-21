@@ -342,7 +342,8 @@
     "proptechContech": "PropTech & ConTech",
     "realEstate": "Imobiliárias",
     "accelerators": "Aceleradoras / Hubs",
-    "marketplaces": "Marketplaces",
+    "gaming": "Gaming",
+    "mobilityTech": "Mobility Tech",
     "agriFoodtech": "Agri & FoodTech",
     "healthtechPettech": "HealthTech & PetTech",
     "edtech": "EdTech & Formação",
@@ -353,7 +354,7 @@
     "ux": "UX",
     "institutions": "Instituições, Ecossistema e Governo",
     "personalBrand": "Personal Brand",
-    "agencies": "Agências",
+    "agencies": "Agências e Produção",
     "healthWellness": "Saúde e Bem-estar"
   },
   "countriesPage": {
