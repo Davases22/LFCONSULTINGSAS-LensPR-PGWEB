@@ -57,6 +57,13 @@ export const clientsData: ClientsData = {
       ]
     },
     {
+      id: "health-wellness",
+      name: "Salud y Bienestar",
+      clients: [
+        { id: "mitho", name: "Mitho Wellness Club", category: "health-wellness", website: "https://mitho.io" }
+      ]
+    },
+    {
       id: "fintech",
       name: "Fintech (pagos, crédito, inversión, payroll)",
       clients: [
@@ -219,13 +226,6 @@ export const clientsData: ClientsData = {
       clients: [
         { id: "masproducciones", name: "masproducciones.co", category: "agencies", website: "https://masproducciones.co" },
         { id: "circuito-floral-cartagena", name: "Circuito Floral Cartagena by E-Club & CC Serrezuela", category: "agencies" }
-      ]
-    },
-    {
-      id: "health-wellness",
-      name: "Salud y Bienestar",
-      clients: [
-        { id: "mitho", name: "Mitho Wellness Club", category: "health-wellness", website: "https://mitho.io" }
       ]
     }
   ]
