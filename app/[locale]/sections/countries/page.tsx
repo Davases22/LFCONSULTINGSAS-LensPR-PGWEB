@@ -74,12 +74,106 @@ const COUNTRY_GEO_NAMES: Record<string, string> = {
   paraguay: "Paraguay",
   espana: "Spain",
   francia: "France",
+  estadosUnidos: "United States of America",
 };
 
 const HIGHLIGHTED_NAMES = new Set(Object.values(COUNTRY_GEO_NAMES));
 const GEO_NAME_TO_KEY = new Map(
   Object.entries(COUNTRY_GEO_NAMES).map(([key, name]) => [name, key])
 );
+
+// Patrones simplificados de banderas (franjas/colores principales; se omiten
+// escudos, estrellas y emblemas finos por ser inviables a esta escala). Se usan
+// solo como fill del estado "hover" en Geography — el resto del tiempo el país
+// se ve negro/blanco según el tema.
+function hStripes(colors: string[], weights?: number[]) {
+  const w = weights ?? colors.map(() => 1);
+  const total = w.reduce((a, b) => a + b, 0);
+  let y = 0;
+  return colors.map((c, i) => {
+    const h = (w[i] / total) * 100;
+    const rect = <rect key={i} x={0} y={y} width={100} height={h} fill={c} />;
+    y += h;
+    return rect;
+  });
+}
+function vStripes(colors: string[], weights?: number[]) {
+  const w = weights ?? colors.map(() => 1);
+  const total = w.reduce((a, b) => a + b, 0);
+  let x = 0;
+  return colors.map((c, i) => {
+    const wd = (w[i] / total) * 100;
+    const rect = <rect key={i} x={x} y={0} width={wd} height={100} fill={c} />;
+    x += wd;
+    return rect;
+  });
+}
+
+const FLAG_PATTERNS: Record<string, React.ReactNode> = {
+  mexico: vStripes(["#006341", "#FFFFFF", "#CE1126"]),
+  panama: (
+    <>
+      <rect x={0} y={0} width={50} height={50} fill="#FFFFFF" />
+      <rect x={50} y={0} width={50} height={50} fill="#D21034" />
+      <rect x={0} y={50} width={50} height={50} fill="#0033A0" />
+      <rect x={50} y={50} width={50} height={50} fill="#FFFFFF" />
+    </>
+  ),
+  costaRica: hStripes(["#002B7F", "#FFFFFF", "#CE1126", "#FFFFFF", "#002B7F"], [1, 1, 2, 1, 1]),
+  repDominicana: (
+    <>
+      <rect x={0} y={0} width={50} height={50} fill="#002D62" />
+      <rect x={50} y={0} width={50} height={50} fill="#CE1126" />
+      <rect x={0} y={50} width={50} height={50} fill="#CE1126" />
+      <rect x={50} y={50} width={50} height={50} fill="#002D62" />
+      <rect x={42} y={0} width={16} height={100} fill="#FFFFFF" />
+      <rect x={0} y={42} width={100} height={16} fill="#FFFFFF" />
+    </>
+  ),
+  guatemala: vStripes(["#4997D0", "#FFFFFF", "#4997D0"]),
+  honduras: hStripes(["#0073CF", "#FFFFFF", "#0073CF"]),
+  elSalvador: hStripes(["#0047AB", "#FFFFFF", "#0047AB"]),
+  nicaragua: hStripes(["#0067C6", "#FFFFFF", "#0067C6"]),
+  colombia: hStripes(["#FCD116", "#003893", "#CE1126"], [2, 1, 1]),
+  brasil: (
+    <>
+      <rect x={0} y={0} width={100} height={100} fill="#009739" />
+      <polygon points="50,8 92,50 50,92 8,50" fill="#FEDD00" />
+      <circle cx={50} cy={50} r={17} fill="#002776" />
+    </>
+  ),
+  ecuador: hStripes(["#FFDD00", "#034EA2", "#EF3340"], [2, 1, 1]),
+  peru: vStripes(["#D91023", "#FFFFFF", "#D91023"]),
+  chile: (
+    <>
+      <rect x={0} y={50} width={100} height={50} fill="#D52B1E" />
+      <rect x={0} y={0} width={100} height={50} fill="#FFFFFF" />
+      <rect x={0} y={0} width={33} height={50} fill="#0039A6" />
+    </>
+  ),
+  argentina: hStripes(["#6CACE4", "#FFFFFF", "#6CACE4"]),
+  uruguay: (
+    <>
+      <rect x={0} y={0} width={100} height={100} fill="#FFFFFF" />
+      {hStripes(
+        ["#0038A8", "#FFFFFF", "#0038A8", "#FFFFFF", "#0038A8", "#FFFFFF", "#0038A8", "#FFFFFF", "#0038A8"],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1]
+      )}
+    </>
+  ),
+  paraguay: hStripes(["#D52B1E", "#FFFFFF", "#0038A8"]),
+  espana: hStripes(["#AA151B", "#F1BF00", "#AA151B"], [1, 2, 1]),
+  francia: vStripes(["#0055A4", "#FFFFFF", "#EF4135"]),
+  estadosUnidos: (
+    <>
+      {hStripes(
+        ["#B22234", "#FFFFFF", "#B22234", "#FFFFFF", "#B22234", "#FFFFFF", "#B22234"],
+        [1, 1, 1, 1, 1, 1, 1]
+      )}
+      <rect x={0} y={0} width={45} height={55} fill="#3C3B6E" />
+    </>
+  ),
+};
 
 // Texas, Florida y San Francisco no son países completos: se marcan como pines sobre EE. UU.
 const CITY_MARKERS: { key: string; coordinates: [number, number] }[] = [
@@ -116,6 +210,22 @@ export default function CountriesPage() {
             projectionConfig={{ scale: 142, center: [0, 6.8] }}
             className="w-full h-auto"
           >
+            <defs>
+              {Object.entries(FLAG_PATTERNS).map(([key, content]) => (
+                <pattern
+                  key={key}
+                  id={`flag-${key}`}
+                  patternUnits="objectBoundingBox"
+                  width={1}
+                  height={1}
+                  viewBox="0 0 100 100"
+                  preserveAspectRatio="none"
+                >
+                  {content}
+                </pattern>
+              ))}
+            </defs>
+
             <Geographies geography={geoUrl}>
               {({ geographies }) =>
                 geographies.map((geo) => {
@@ -123,6 +233,7 @@ export default function CountriesPage() {
                   if (name === "Antarctica" || name === "Greenland") return null;
                   const key = GEO_NAME_TO_KEY.get(name);
                   const isHighlighted = HIGHLIGHTED_NAMES.has(name);
+                  const hasFlag = Boolean(isHighlighted && key && FLAG_PATTERNS[key]);
                   return (
                     <Geography
                       key={geo.rsmKey}
@@ -130,8 +241,16 @@ export default function CountriesPage() {
                       strokeWidth={0.5}
                       className={
                         isHighlighted
-                          ? "fill-black dark:fill-white stroke-white dark:stroke-zinc-900 outline-none cursor-pointer transition-colors duration-150 hover:fill-gray-700 dark:hover:fill-gray-300"
+                          ? "fill-black dark:fill-white stroke-white dark:stroke-zinc-900 outline-none cursor-pointer transition-colors duration-150"
                           : "fill-gray-200 dark:fill-zinc-700 stroke-white dark:stroke-zinc-900 outline-none"
+                      }
+                      style={
+                        hasFlag
+                          ? {
+                              hover: { fill: `url(#flag-${key})`, outline: "none" },
+                              pressed: { fill: `url(#flag-${key})`, outline: "none" },
+                            }
+                          : undefined
                       }
                       onMouseEnter={
                         isHighlighted && key ? showTooltip(t(`list.${key}`)) : undefined
