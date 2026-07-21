@@ -50,7 +50,7 @@ const continents: Continent[] = [
   },
   {
     key: "europe",
-    countries: ["espana", "francia"],
+    countries: ["espana", "francia", "reinoUnido"],
   },
 ];
 
@@ -75,6 +75,7 @@ const COUNTRY_GEO_NAMES: Record<string, string> = {
   espana: "Spain",
   francia: "France",
   estadosUnidos: "United States of America",
+  reinoUnido: "United Kingdom",
 };
 
 const HIGHLIGHTED_NAMES = new Set(Object.values(COUNTRY_GEO_NAMES));
@@ -171,6 +172,19 @@ const FLAG_PATTERNS: Record<string, React.ReactNode> = {
         [1, 1, 1, 1, 1, 1, 1]
       )}
       <rect x={0} y={0} width={45} height={55} fill="#3C3B6E" />
+    </>
+  ),
+  reinoUnido: (
+    <>
+      <rect x={0} y={0} width={100} height={100} fill="#00247D" />
+      <line x1={0} y1={0} x2={100} y2={100} stroke="#FFFFFF" strokeWidth={22} />
+      <line x1={100} y1={0} x2={0} y2={100} stroke="#FFFFFF" strokeWidth={22} />
+      <line x1={0} y1={0} x2={100} y2={100} stroke="#CF142B" strokeWidth={9} />
+      <line x1={100} y1={0} x2={0} y2={100} stroke="#CF142B" strokeWidth={9} />
+      <rect x={0} y={40} width={100} height={20} fill="#FFFFFF" />
+      <rect x={40} y={0} width={20} height={100} fill="#FFFFFF" />
+      <rect x={0} y={45} width={100} height={10} fill="#CF142B" />
+      <rect x={45} y={0} width={10} height={100} fill="#CF142B" />
     </>
   ),
 };
