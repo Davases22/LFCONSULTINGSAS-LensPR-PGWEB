@@ -360,6 +360,8 @@
   },
   "countriesPage": {
     "title": "Countries & Cities",
+    "subtitle": "Presence across {count} markets in the Americas and Europe.",
+    "hint": "Hover or tap a point on the map to see the market.",
     "continents": {
       "northAmerica": "North America",
       "centralAmerica": "Central America & the Caribbean",

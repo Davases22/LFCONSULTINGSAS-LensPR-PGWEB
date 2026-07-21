@@ -359,6 +359,8 @@
   },
   "countriesPage": {
     "title": "Países & Cidades",
+    "subtitle": "Presença em {count} mercados das Américas e da Europa.",
+    "hint": "Passe o cursor ou toque em um ponto do mapa para ver o mercado.",
     "continents": {
       "northAmerica": "América do Norte",
       "centralAmerica": "América Central e Caribe",
