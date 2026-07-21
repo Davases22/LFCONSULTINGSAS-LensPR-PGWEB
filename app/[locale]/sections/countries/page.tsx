@@ -83,6 +83,14 @@ const GEO_NAME_TO_KEY = new Map(
   Object.entries(COUNTRY_GEO_NAMES).map(([key, name]) => [name, key])
 );
 
+// El topojson de world-atlas modela algunos países como MultiPolygon que incluye
+// sus territorios de ultramar (p.ej. "France" trae también la Guayana Francesa,
+// en Sudamérica). Sin este filtro esos territorios se pintan como resaltados
+// aunque no estén en la lista de países. Umbral de longitud mínima por país.
+const MIN_LONGITUDE_BY_NAME: Record<string, number> = {
+  France: -20,
+};
+
 // Patrones simplificados de banderas (franjas/colores principales; se omiten
 // escudos, estrellas y emblemas finos por ser inviables a esta escala). Se usan
 // solo como fill del estado "hover" en Geography — el resto del tiempo el país
@@ -248,10 +256,32 @@ export default function CountriesPage() {
                   const key = GEO_NAME_TO_KEY.get(name);
                   const isHighlighted = HIGHLIGHTED_NAMES.has(name);
                   const hasFlag = Boolean(isHighlighted && key && FLAG_PATTERNS[key]);
+
+                  // react-simple-maps ya trae el `d` (svgPath) precalculado por polígono;
+                  // hay que filtrar ese string, no basta con filtrar geometry.coordinates.
+                  const minLongitude = MIN_LONGITUDE_BY_NAME[name];
+                  let renderGeography = geo;
+                  if (
+                    minLongitude !== undefined &&
+                    geo.geometry.type === "MultiPolygon" &&
+                    geo.svgPath
+                  ) {
+                    const polygons = geo.geometry.coordinates as number[][][][];
+                    const subpaths = geo.svgPath.match(/M[^M]*/g);
+                    if (subpaths && subpaths.length === polygons.length) {
+                      renderGeography = {
+                        ...geo,
+                        svgPath: polygons
+                          .map((polygon, i) => (polygon[0][0][0] >= minLongitude ? subpaths[i] : ""))
+                          .join(""),
+                      };
+                    }
+                  }
+
                   return (
                     <Geography
                       key={geo.rsmKey}
-                      geography={geo}
+                      geography={renderGeography}
                       strokeWidth={0.5}
                       className={
                         isHighlighted
