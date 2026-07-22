@@ -87,7 +87,7 @@ export default function Footer({ locale }: { locale: string }) {
               © {new Date().getFullYear()} {t("brand")}. {t("bottom")}
             </div>
             <Link
-              href="https://calendly.com/laura-lenspr/30min"
+              href="https://calendly.com/lauraforerolenspr"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 text-sm font-medium text-white bg-black rounded-full hover:bg-white hover:text-black hover:border hover:border-black transition-all duration-300"

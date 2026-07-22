@@ -8,7 +8,7 @@ const images = [...Array(15)].map((_, i) => `/images/eventos/evento${i + 1}.png`
 
 export default function EventsPhotoCarousel() {
     return (
-        <motion.div className="relative w-full overflow-hidden bg-white dark:bg-black">
+        <motion.div className="relative w-full overflow-hidden bg-white dark:bg-black pb-2 md:pb-3">
             <motion.div
                 className="flex"
                 animate={{ x: ["0%", "-100%"] }}
