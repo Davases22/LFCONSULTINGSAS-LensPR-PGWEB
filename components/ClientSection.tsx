@@ -7,8 +7,6 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-const images = [...Array(15)].map((_, i) => `/images/eventos/evento${i + 1}.png`);
-
 const principalesLogos = [
     "blackrock", "latitud", "huawei", "deel", "dapper",
     "yuno", "morado", "femsa-ventures", "universidad-ean", "trii",
@@ -166,42 +164,6 @@ export default function ClientSection() {
                 </motion.div>
 
             </div>
-
-            <motion.div
-                className="relative w-full overflow-hidden pt-20"
-            >
-                <motion.div
-                    className="flex"
-                    animate={{ x: ["0%", "-100%"] }}
-                    transition={{
-                        repeat: Infinity,
-                        duration: 30,
-                        ease: "linear",
-                    }}
-                >
-                    {[...images, ...images].map((src, index) => {
-                        const isCenter = index % images.length === Math.floor(images.length / 2); // Imagen del medio
-
-                        return (
-                            <motion.div
-                                key={index}
-                                className={`flex-shrink-0 transition-transform duration-1000`}
-                            >
-                                <div className="w-36 h-20 lg:w-auto lg:h-56 flex items-center justify-center">
-                                    <Image
-                                        src={src}
-                                        alt={`Client ${index}`}
-                                        width={220}
-                                        height={220}
-                                        className="object-fill"
-                                    />
-                                </div>
-
-                            </motion.div>
-                        );
-                    })}
-                </motion.div>
-            </motion.div>
 
         </section>
     );
