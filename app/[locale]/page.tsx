@@ -6,6 +6,7 @@ import CredibilitySection from "@/components/CredibilitySection";
 import Paragraph from "@/components/paragraph";
 import TravelHospitalityCarousel from "@/components/TravelHospitalityCarousel";
 import ClientSection from "@/components/ClientSection";
+import EventsPhotoCarousel from "@/components/EventsPhotoCarousel";
 
 export default function HomePage() {
   const t = useTranslations("hero");
@@ -13,6 +14,7 @@ export default function HomePage() {
   return (
     <main>
       <Hero title={t("title")} subtitle={t("subtitle")} />
+      <EventsPhotoCarousel />
       <Paragraph />
       <CredibilitySection />
       <TravelHospitalityCarousel />
