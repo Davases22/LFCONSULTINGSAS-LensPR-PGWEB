@@ -386,7 +386,9 @@
       "honduras": "Honduras",
       "elSalvador": "El Salvador",
       "nicaragua": "Nicaragua",
-      "paraguay": "Paraguay"
+      "paraguay": "Paraguay",
+      "estadosUnidos": "Estados Unidos",
+      "reinoUnido": "Reino Unido"
     }
   }
 }
